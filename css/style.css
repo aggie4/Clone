@@ -1,0 +1,215 @@
+@charset "utf-8";
+#wrap {
+    width: 100%;
+    min-width: 1220px;
+}
+#header_main {
+    width: 1200px;
+    height: 80px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo a {
+    display: block;
+    width: 138px;
+    height: 20px;
+    background-image: url(../img/logo.gif);
+    background-repeat: no-repeat;
+    text-indent: -9999px;
+}
+.header_menu ul {
+    display: flex;
+}
+.header_menu li {
+    margin: 0 50px 0 0;
+}
+.header_menu li a {
+    color: #222;
+    font-size: 18px;
+}
+.header_ut ul {
+    display: flex;
+}
+.header_ut li {
+    margin-right: 30px;
+}
+.header_ut li a {
+    color: #666;
+    font-size: 16px;
+}
+.header_ut a:hover {
+    color: #222;
+}
+.header_ut .header_search a {
+    display: block;
+    width: 20px;
+    height: 20px;
+    background-image: url(../img/icon_search.png);
+    background-repeat: no-repeat;
+    text-indent: -9999px;
+}
+.header_ut .header_cart a {
+    display: block;
+    width: 22px;
+    height: 20px;
+    background-image: url(../img/icon_cart.png);
+    background-repeat: no-repeat;
+    text-indent: -9999px;
+}
+/* header 끝 */
+.main_box {
+    position: relative;
+    height: 480px;
+    margin-bottom: 50px;
+    overflow: hidden;
+}
+.main_box a {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: -800px;
+}
+/* main끝 */
+.event {
+    width: 1200px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+.event ul {
+    display: flex;
+    justify-content: space-between;
+}
+/* event끝 */
+.best_list {
+    position: relative;
+    width: 1200px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+.best_list h2 {
+    font-size: 18px;
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+.best_list span {
+    color: #555;
+    font-weight: 400;
+}
+.best_list ul {
+    display: flex;
+    justify-content: space-between;
+}
+.best_list li {
+    width: 300px;
+    text-align: center;
+    margin-right: 20px;
+}
+.best_list .photo {
+    border: 1px solid #ddd;
+    margin-bottom: 18px;
+}
+.best_list .photo img {
+    width: 100%;
+    height: auto;
+}
+.best_list .brand_name {
+    font-size: 16px;
+}
+.best_list .item_name {
+    color: #888;
+    height: 55px;
+    font-size: 14px;
+}
+.best_list .price img {
+    margin-top: 6px;
+}
+.best_list .plus {
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: #888;
+}
+.best_list .plus a {
+    color: #777;
+    padding-right: 15px;
+    background-image: url(../img/icon_plus.png);
+    background-repeat: no-repeat;
+    background-position: right center;
+}
+/* best끝 */
+.promotion {
+    width: 1200px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+.promotion ul {
+    display: flex;
+    justify-content: space-between;
+}
+.promotion li {
+    position: relative;
+}
+.promotion .text {
+    position: absolute;
+    top: 60px;
+    left: 20px;
+    color: #666;
+    font-size: 15px;
+}
+/* promotion끝 */
+#footer {
+    border-top: 1px solid #ddd;
+    padding-top: 20px;
+    padding-bottom: 45px;
+}
+#footer_in {
+    position: relative;
+    width: 1200px;
+    margin: 0 auto;
+}
+.f_menu ul {
+    display: flex;
+}
+.f_menu li {
+    margin: 0 10px 15px 0;
+}
+.f_menu a {
+    color: #777;
+    font-size: 14px;
+}
+.f_menu .point a {
+    color: hotpink;
+}
+.f_info {
+    color: #777;
+    font-size: 14px;
+}
+/* footer끝 */
+.kg {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.kg .kg_logo {
+    margin-bottom: 10px;
+}
+.kg .kg_logo img {
+    width: 65px;
+}
+.kg .kg_text {
+    color: #777;
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+.kg .kg_link {
+    color: #777;
+    font-size: 14px;
+}
+.kg .kg_link a {
+    padding-right: 12px;
+    background-image: url(../img/arrow01.png);
+    background-repeat: no-repeat;
+    background-position: right 7px;
+}
