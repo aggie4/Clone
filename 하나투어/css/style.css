@@ -1,0 +1,164 @@
+@charset "utf-8";
+/* #wrap */
+#wrap {
+    position: relative;
+    width: 100%;
+    min-width: 1220px;
+}
+/* 상단배너 영역 */
+#topBn {
+    position: relative;
+    background-color: #fef2f4;
+}
+.topBnList {
+    display: flex;
+    width: 1220px;
+    margin: 0 auto;
+}
+.topBnList figcaption {
+    display: none;
+}
+.topBnClose {
+    position: absolute;
+    top: 32px;
+    right: 50%;
+    margin-right: -600px;
+}
+.topBnClose a {
+    display: block;
+    width: 24px;
+    height: 24px;
+    background-image: url(../img/topbn_close.png);
+    text-indent: -9999px;
+}
+/* 헤더영역 */
+#header {
+    position: relative;
+    border-bottom: 1px solid #141416;
+}
+#header::before {
+    position: absolute;
+    top: 110px;
+    left: 0;
+    content: '';
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: #ddd;
+}
+.h_in {
+    position: relative;
+    width: 1200px;
+    height: 170px;
+    margin: 0 auto;
+}
+.h_utill {
+    padding: 14px 0;
+}
+.h_utill ul {
+    display: flex;
+    justify-content: end;
+}
+.h_utill li {
+    margin-left: 14px;
+}
+.h_utill li a {
+    font-size: 12px;
+    color: #333;
+}
+.h_utill li a:hover {
+    color: #5e2bb8;
+}
+.h_ls {
+    display: flex;
+    align-items: center;
+}
+.logo {
+    margin-right: 30px;
+}
+.logo a {
+    display: block;
+    width: 150px;
+    height: 30px;
+    background-image: url(../img/logo.png);
+    text-indent: -9999px;
+}
+.h_search {
+    width: 406px;
+    height: 40px;
+    border: 2px solid #111;
+    border-radius: 22px;
+    margin-right: 40px;
+}
+.h_search fieldset {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 16px 0 20px;
+}
+.h_search input {
+    width: 330px;
+    height: 40px;
+}
+.h_search input:focus {
+    outline: none;
+} /* focus 선택됐을 때 아웃라인을 없앤다. */
+/* :focus 인풋태그가 선택되었을 때 선이 나타나는 것을 지워버린다. */
+.h_search button {
+    width: 30px;
+    height: 40px;
+    background-image: url(../img/ico-search.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    text-indent: -9999px;
+}
+.h_keyword {
+    position: relative;
+    width: 100px;
+}
+.h_keyword .hks_hot,
+.h_keyword_list p span {
+    display: inline-block;
+    padding: 0 4px;
+    border: 1px solid #5e2bb8;
+    border-radius: 4px 0 4px 4px;
+    margin-right: 5px;
+    background-color: #fff;
+    font-size: 10px;
+    line-height: 16px;
+    color: #5e2bb8;
+}
+.h_keyword .hks_local {
+    color: #333;
+}
+.h_keyword_list {
+    position: absolute;
+    top: -13px;
+    left: -21px;
+    width: 186px;
+    display: none;
+}
+.h_keyword:hover .h_keyword_list {
+    display: block;
+}
+.h_keyword_list_box {
+    border: 1px solid #111;
+    background-color: #fff;
+}
+.h_keyword_list p {
+    padding: 12px 20px 14px 20px;
+    background-color: #f3f3f3;
+    color: #111;
+}
+.h_keyword_list ul {
+    padding: 10px 20px 17px 20px;
+}
+.h_keyword_list li {
+    margin-top: 4px;
+}
+.h_keyword_list li a {
+    font-size: 13px;
+    color: #111;
+}
+.h_keyword_list li a:hover {
+    text-decoration: underline;
+}
