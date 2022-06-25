@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>PC 기본메뉴</title>
+        <style>
+            /* 전체적인 reset */
+            body {
+                margin: 0;
+            }
+            ul {
+                list-style: none;
+                padding: 0;
+                margin: 0;
+            }
+            a {
+                text-decoration: none;
+            }
+            /* 메뉴 style */
+            #wrap {
+                position: relative;
+                width: 100%;
+                min-width: 1220px;
+            }
+            #header {
+                position: relative;
+                border-bottom: 1px solid #ccc;
+                z-index: 500;
+            }
+            .h_in {
+                position: relative;
+                width: 1200px;
+                height: 80px;
+                margin: 0 auto;
+                background-color: aqua;
+                z-index: 100;
+            }
+            .gnb {
+                position: absolute;
+                top: 40px;
+                right: 0;
+                height: 40px;
+            }
+            .menu {
+                display: flex;
+            }
+            .menu .d1 {
+                position: relative;
+            }
+            .menu .d1 .main {
+                display: block;
+                padding: 7px 50px 13px 50px;
+                font-size: 17px;
+                color: #232329;
+                font-weight: 700;
+                text-decoration: none;
+                background-color: hotpink;
+            }
+            .gnb .sub {
+                position: absolute;
+                top: 40px;
+                left: 0;
+                display: none;
+                width: 100%;
+                background-color: aliceblue;
+            }
+            .gnb .sub ul {
+                padding: 10px 0;
+                text-align: center;
+            }
+            .gnb .sub li {
+                padding: 5px 0;
+            }
+            .gnb .sub li a {
+                font-size: 15px;
+                color: #575759;
+            }
+            .sub > ul > li:hover {
+                font-weight: 700;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="wrap">
+            <!-- 뼈대 사이즈를 wrap이라고 쓰인다. -->
+            <header id="header">
+                <div class="h_in">
+                    <!-- header안에 inner줄임말 -->
+                    <nav class="gnb">
+                        <!-- 통상 이름은 gnb 이름으로 많이 짓는다. -->
+                        <ul class="menu">
+                            <li class="d1">
+                                <a href="" class="main">리바트브랜드</a>
+                                <div class="sub">
+                                    <ul>
+                                        <li><a href="">리바트</a></li>
+                                        <li><a href="">리바트 이즈마인</a></li>
+                                        <li><a href="">리바트 키즈</a></li>
+                                        <li><a href="">H.MODEO</a></li>
+                                        <li><a href="">리첸</a></li>
+                                        <li><a href="">리바트 키친</a></li>
+                                        <li><a href="">리바트 하움</a></li>
+                                        <li><a href="">리바트 네오스</a></li>
+                                        <li><a href="">리바트 빌트인</a></li>
+                                        <li><a href="">리바트 마린</a></li>
+                                        <li><a href="">리바트 엔슬립</a></li>
+                                        <li><a href="">법인영업 (H$S)</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="d1">
+                                <a href="" class="main">리바트몰</a>
+                                <div class="sub">
+                                    <ul>
+                                        <li><a href="">기획전</a></li>
+                                        <li><a href="">이벤트</a></li>
+                                        <li><a href="">반짝딜</a></li>
+                                        <li><a href="">HOT 50</a></li>
+                                        <li><a href="">테마존</a></li>
+                                        <li><a href="">패키지 상품</a></li>
+                                        <li><a href="">아울렛</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="d1">
+                                <a href="" class="main">리바트스토리</a>
+                                <div class="sub">
+                                    <ul>
+                                        <li><a href="">리바트 미디어</a></li>
+                                        <li><a href="">리바트 신제품</a></li>
+                                        <li><a href="">리바트 다이어리</a></li>
+                                        <li><a href="">브랜드 이벤트</a></li>
+                                        <li><a href="">매장 이벤트</a></li>
+                                        <li><a href="">주방시공사례</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="d1">
+                                <a href="" class="main">회사소개</a>
+                                <div class="sub">
+                                    <ul>
+                                        <li><a href="">About 현대리바트</a></li>
+                                        <li><a href="">연구소</a></li>
+                                        <li><a href="">투자정보</a></li>
+                                        <li><a href="">인재채용</a></li>
+                                        <li><a href="">고객센터</a></li>
+                                        <li><a href="">매장찾기</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </header>
+        </div>
+        <!-- 클래스 이름은 누가 봐도 알아볼 수 있게 (아이디, 클래스) 이름을 짓는 게 좋다. -->
+        <script src="https://code.jquery.com/jquery-1.12.4.min.js "></script>
+        <script src="./js/ex03.js"></script>
+    </body>
+</html>

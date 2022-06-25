@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .box{
+            width: 350px;
+            height: 350px;
+            margin: 100px auto;
+            border: 5px dotted gray;
+            position: relative;
+            background-color: aliceblue;
+        }
+        .box > .day{
+            font-size: 180px;
+            transform: translate(80px, -200px);
+        }
+        .box > .month {
+            font-size: 80px;
+            letter-spacing: 30px;
+            transform: translate(80px , -400px);
+        }
+        .box  > .year {
+            font-size: 30px;
+            margin-bottom: 60px;
+            position: absolute;
+            bottom: 0;
+            right: 0px;
+            transform: rotate(90deg);
+            
+        }
+        .box > .week {
+            font-size: 30px;
+            letter-spacing: 10px;
+            margin-bottom: 60px;
+            position: absolute;
+            bottom: 100px;
+            left: -100px;
+            transform: rotate(270deg);
+        }
+    </style>
+</head>
+<body>
+    <div class="box_list">
+        <div class="box">
+            <p class="day">06</p>
+            <p class="month">FEB</p>
+            <p class="year">2013</p>
+            <p class="week">WEDNESDAY</p>
+        </div>
+    </div>
+</body>
+</html>

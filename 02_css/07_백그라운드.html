@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>background</title>
+</head>
+<body>
+    <ol>
+        <li>
+            <h2>background-color</h2>
+            <p>
+                속성값 : 색상명(red , green , blue), 색상코드(#000000 , #ffaadd 등등) rgba값(N, N, N, 0~1), rgd(N N N )
+            </p>
+            <!-- 예시 -->
+            <div style="padding: 10px 0; background-color: red;">색상명</div>
+            <div style="padding: 10px 0; background-color: #ff33aa;">색상코드</div>
+            <div style="padding: 10px 0; background-color: rgba(100, 190, 70, 0.5);">rgba</div>
+            <div style="padding: 10px 0; background-color: rgb(100, 190, 70);">rgb</div>
+            <div style="padding: 10px 0; background-color: #ccc;">색상코드 줄임</div>
+        </li>
+        <!-- background-color -->
+        <li>
+            <h2>background-image : 배경 이미지</h2>
+            <p>background-image : url(경로/폴더이름/파일이름.확장자)</p>
+            <p>배경이미지를 넣을 때는 너비와 높이값이 있어야 적용이 가능하다. 안 그러면 글자가 있는 크기나, 기본 요소의 크기만큼만 이미지가 보여진다.
+                내용이 없더라도 높이값과 너비값이 있어야 이미지가 나타난다.
+            </p>
+            <!-- 예시 -->
+            <div style="width: 800px; height: 200px; background-image: url(./images/flower.jpg);">
+                배경이미지넣기
+            </div>
+        </li>
+        <!-- background-image -->
+        <li>
+            <h2>background-size : 배경이미지 사이즈</h2>
+            <p>
+                background-size : contain
+            </p>
+            <p>
+                background-size : cover
+            </p>
+        </li>
+        <!-- 예시 -->
+        <div style="width: 800px; height: 200px; background-image: url(./images/flower.jpg); background-size: cover;">
+            배경이미지사이즈
+        </div>
+        <!-- background-size -->
+        <li>
+            <h2>background-repeat : 배경이미지의 반복</h2>
+            <p>
+                속성값 : no-repeat , repeat , repeat-x , repeat-y , space , round
+            </p>
+            <!-- 예시 -->
+            <div style="width: 800px; height: 200px; background-image: url(./images/flower.jpg); background-size: contain; background-repeat: no-repeat;">
+                배경이미지 반복
+            </div>
+        </li>
+        <!-- background-repeat -->
+        <li>
+            <h2>background-position : 배경이미지의 위치</h2>
+            <p>
+                background-position : 가로위치 세로위치 ; <br>
+                가로위치 : left , right , center , px , % <br>
+                세로위치 : top , bottom , center , px , %
+            </p>
+            <!-- 예시 -->
+            <div style="width: 800px; height: 200px; background-image: url(./images/flower.jpg); background-size: contain; background-repeat: no-repeat; background-position: center bottom; text-indent: -9999px;">
+                배경이미지 위치
+            </div>
+            <!-- 숨겨진 글자가 나타난다. 글자를 숨길 때 text-indent:-9999px;-->
+        </li>
+        <!-- background-position -->
+    </ol>
+</body>
+</html>

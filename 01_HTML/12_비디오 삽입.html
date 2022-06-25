@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>비디오 삽입</title>
+</head>
+<body>
+    <h1>video / source </h1>
+    <ol>
+        <li>
+            비디오 파일을 다운로드 및 저장 한 후 사용
+        </li>
+        <li>
+            유튜브 등 비디오가 있는 사이드의 링크를 복사해서 사용
+        </li>
+        <li>
+            저장된 영상 파일을 삽입하는 경우 한글이 없어야 한다.
+        </li>
+        <li>
+            파일 용량이 커질수록 화질은 좋아진다. 대신에 페이지 로딩 속도가 느려진다.
+        </li>
+    </ol>
+    <ol>
+        <li>
+            <h2>video 태그의 속성</h2>
+            <ul>
+                <li>
+                    source 태그를 video태그안에 넣고, src 속성으로 삽입할 동영상 파일의 경로를 입력하여 사용
+                </li>
+                <li>
+                    controls : 컨트롤 패널을 표시해주는 속성(재생 , 일시정지 , 볼륨 등등)
+                </li>
+                <li>
+                    width / heigth : 영상의 가로 / 세로 사이즈를 정해주는 속성
+                </li>
+                <li>
+                    autoplay : 자동재생 시켜주는 속성
+                </li>
+                <li>
+                    muted : 음소거 시키는 속성
+                </li>
+                <li>
+                    loop : 반복재생을 시켜주는 속성
+                </li>
+                <li>
+                    켜자말자 자동재생 되는데 소리 없이 영상만 계속 나오는 경우 : autopaly 와 muted를 동시에 사용
+                </li>
+            </ul>
+            <div class="ex1">
+                <video autoplay muted controls style="width: 500px;">
+                    <source src="./Bar. Julian Kim - Yeon.mp4">
+                </video>
+            </div>
+        </li>
+    </ol>
+    <br><br><br>
+    <h1>iframe</h1>
+    <ol>
+        <li>
+            영상의 HTML문서 주소를 넣어서 사용
+        </li>
+        <li>
+            < iframe src="영상주소" title="설명" width="너비" height="높이">< /iframe>
+            <!-- iframe 태그 사용법 -->
+        </li>
+        <li>
+            유튜브 같은 경우 동영상에 오른쪽 클릭하면 "소스복사" 를 클릭해서 옮기면 정말 친절하게 iframe까지 다 복사해서 옮겨진다
+            <!-- 유튜브 기준 동영상 오른쪽 소스복사 후 붙혀넣기 -->
+        </li>
+        <li>
+            간혹 가다가 이런식으로 끌어다 쓰지 못하게 막혀있는 영상들이 있다. 그거는 끌어와봐야 확인이 가능하다.
+            <!-- 링크를 걸어봐야 암 -->
+        </li>
+    </ol>
+</body>
+</html>

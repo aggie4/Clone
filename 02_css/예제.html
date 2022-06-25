@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+<body>
+    <div>
+    <h1>widht / heigth / margin</h1>
+        <p style="width: 300px; height: 200px; background-color: aqua;"> <br>
+            300*200
+        </p>
+        <p style="width: 300px; height: 100px; margin: 20px 20px 20px 20px; background-color: beige;"><br>
+            300*100 여백이 사방으로 20px
+        </p>
+        <p style="width: 300px; height: 100px; margin: 50px 0 0 0; background-color: blue;"><br>
+            300*100 여백이 위로만 50px
+        </p>
+        <p style="width: 300px; height:100px; margin: 0 0 0 100px; background-color: yellow;"><br>
+            300*100  여백이 왼쪽으로만 100px
+        </p>
+        <p style="width: 300px; height: 100px; margin: 50px 0 50px 0; background-color: springgreen;" ><br>
+            300*100  여백이 아래위로 50px
+        </p>
+    </div>
+    <div>
+        <h1>widht / height / padding</h1>
+        <p style="width: 300px; height: 100px; background-color: pink; padding: 50px;">
+            300*100 <br>
+            안쪽 여백50 <br>
+            총 너비와 높이는? 400*200
+        </p>
+        <p style="width: 300px; height: 100px; background-color: steelblue; margin: 10px 0 0 20px; padding: 10px 0 0 20px;">
+            300*100 <br>
+            밖 : 위50 /왼20 <br>
+            안 : 위10 /왼20 <br>
+            총 너비와 높이는 320*120
+        </p>
+    </div>
+    <div style="width: 600px; height: 500px; margin: 50px; background-color: aqua;">
+        <p>
+            600*500 / 전체 밖 50
+        </p>
+        <p style="width: 300px; height: 100px; background-color: crimson; margin-left: 20px;">
+            300*100
+        </p>
+        <p style="width: 300px; height: 50px; background-color: coral; padding-bottom: 30px;">
+            300*50
+        </p>
+        <span style="width: 100px; height: 100px; padding: 50px; background-color: darkgoldenrod;">
+            100*100 / 안쪽 50
+        </span>
+        <p style="width: 200px; height: 100px; background-color: cornflowerblue; margin: 80px 0 0 300px; padding: 10px 30px 10px 30px;">
+            200*100 <br>
+            밖 : 위80 / 왼300 <br>
+            안 : 위아래10/오른 왼 30
+        </p>
+    </div>
+    <div style="width: 80%; height: 300px; background-color: slategray; margin: 100px 0 200px 0;"> 80%*300/위100/아래200
+        <span style="width: 100px; height: 100px; background-color: bisque; margin-left: 20px;">
+            100*100/왼20
+        </span>
+        <a href="#" style="width: 100px; height: 100px; margin-left: 50px; background-color: hotpink;">
+            100*100 / 왼 50
+        </a>
+        <div style="width: 100px; height: 50px; background-color: cornflowerblue;">
+            100*50
+        </div>
+        <div style="width: 100px; height: 50px; background-color: aquamarine;">
+            100*50
+        </div>
+        <div style="width: 100px; height: 50px; margin: 0; background-color: coral;">
+            100*50 <br>
+            여백없음
+        </div>
+    </div>
+    <div style="width: 60%; height: 200px; margin-bottom: 50px; background-color: bisque;">
+        60% * 200 / 위50
+        <div style="width: 80%; height: 50%; margin:0 auto; background-color: grey;">
+            80% *50% <br>
+            중간에 오려면
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>while문과 반복문 활용</title>
+</head>
+<body>
+    <h1>while문</h1>
+    <textarea cols="150" rows="10">
+
+        1. while문
+            - for문보다 조금 더 단순한 식으로 표현할 수 있다.
+            - while문도 for문과 비슷한데, while문은 조건이 하나 들어간다는 차이가 존재한다.
+            - for문의 경우 반복하고자 하는 범위가 정확할 경우에 사용되어진다.
+            - while문은 반복하고자하는 범위가 전확하지 않은 경우에 사용되어진다.
+            - 예를 들면 언제 종료할지는 모르지만 일단 반복해줘 라는 느낌으로 사용되어지는게 while문이다.
+
+        2. while문 사용 양식
+            반복을 위한 변수 선언
+            while (조건) {
+                반복될 내용
+                증감식
+            }
+
+        3. 1번에서 이야한 예를 들어 사용처를 보자면 아래와 같다.
+            let buttonClick = true
+            while (buttonClick == true){
+                console.log('while문 살행!!!')
+            }
+            이런 식으로 사용이 많이 되어진다.
+            언제 끝나는지는 모르지만 일단 반복은 해줘 라는 느낌.
+            <!-- 통상 for문을 많이 사용, -->
+        <h2>반복문의 활용</h2>
+        <textarea cols="150" rows="10">
+
+            반복문 for문은 배열과 찰떡궁합으로 사용이 되어진다고 할 수 있다.
+            사실 for문의 존재하는 이유가 배열에 있다고 해도 거짓이 아닐 만큼 천생연분이다.
+
+            예를 들어 설명하면 아래와 같다.
+                - 과일 이름이 들어가있는 배열이 있다고 가장하자.
+                - 내가 그 배열안에 있는 과일들을 하나씩 출력해내보고 싶다고 한다면 다음과 같이 사용이 가능하다.
+                    let fruit = ['banana','apple','grape','mango']
+                    for (let i = 0; i < figure.length; i++){
+                        console.log(fruit[i])
+                    }
+                - 위와 같은 식으로 배열과 for문을 함께 사용하는 경우가 많이 있다.
+                - 내가 하나하나 세어보지 않아도 배열의 길이 값이 리턴되므로, 배열의 크기만큼만 반복할 수 있다.
+                - 배열안에 들어있는 정보의 갯수가 3만 8천개 라고 해도 딱 알아서 그 길이 값이 반환된다.
+                - 그리고 나서 콘솔창에 출력되는 배열의 정보는 선언된 변수의 순선대로 출력되어진다.
+                <!-- 함수라는 건 호출이 되야 기능발휘, 객체라는 건 정보를 담을 수도 있고, 기능을 담을수도 있지만,  -->
+                <!-- 배열은 짜르고 추가하고 하는 게 장점 -->
+        </textarea>
+    </textarea>
+    <script src="./JS/s18.js">
+
+    </script>
+</body>
+</html>

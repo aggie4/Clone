@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>속성 선택자</title>
+    <style>
+        h4[class] {
+            color: royalblue;
+        }
+        /* class 속성을 가진 h4 */
+        p[class="cafe"]{
+            color: red;
+        }
+        /* p태그 중에 class 속성값이 cafe만 있는 요소 */
+        p[class~="cafe"]{
+            color: green;
+        }
+        /* p태그 중에 class속성값이 cafe가 포함된 요소 */
+        p[class|="cafe"]{
+            color: goldenrod;
+        }
+       /* p태그 중에 class 속상값이 cafe이거나 cafe-로 시작되는 요소 */
+        p[class^="cafe"]{
+            color: hotpink;
+        }
+        /* p태그 중에 class 속성값이 cafe이거나 cafe로 시작되는 요소 */
+        p[class$="cafe"]{
+            color: blue;
+        }
+        /* p태그 중에 class 속성값이 cafe이거나 cafe로 끝나느 요소 */
+        p[class*="ee"]{
+            color: brown;
+        }
+        /* p태그 중에 class 속성값이 ee이거나 ee가 포함된 요소 */
+        
+    </style>
+</head>
+<body>
+    <div>
+        <h4 class="h1">속성선택자를</h4>
+        <h4>알아봅시다</h4>
+        <p class="cafe">스타벅스</p>
+        <p class="cafeee">이디야</p>
+        <p class="eecafe">할리스</p>
+        <p class="ee cafe aa">파스쿠치</p>
+        <p class="cafe-1">엔제리너스</p>
+    </div>
+</body>
+</html>

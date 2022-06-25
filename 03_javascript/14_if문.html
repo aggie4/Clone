@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>제어문(if문)</title>
+</head>
+<body>
+    <h1>if문</h1>
+    <textarea cols="150" rows="10">
+        if문 사용 양식
+        if (조건식) {
+            동작
+        }
+        => 조건이 참일 때 중괄호{} 명령이 실행된다.
+        => 조건이 거짓일때는 실행되지 않는다.
+
+        if (조건식) {
+            조건식이 참일 때 실행할 명령
+        } else {
+            조건식이 거짓일 때 실행할 명령
+        }
+
+        if (조건1) {
+            조건1이 참일 때 실행할 명령
+        } else if (조건2) {
+            조건2이 참일 때 실행할 명령
+        } else if (조건3) {
+            조건3가 참일 때 실행할 명령
+        } else {
+            조건1~3이 모두 거짓일 때 실행할 명령
+        }
+
+        if (조건1 && 조건2) {
+            조건1과 조건2가 모두 참일 때 실행
+        }
+
+        if (조건 1 || 조건2) {
+            조건1과 조건2가 모두 참이거나,
+            조건1만 참이거나,
+            조건2만 참일 때 실행
+        }
+            => 만약에 조건이 2가지 이상이라면 2개의 조건을 연산할 수 있는 &&과 ||을 사용하면 된다.
+    </textarea>
+    <script src="./JS/s14.js"></script>
+</body>
+</html>

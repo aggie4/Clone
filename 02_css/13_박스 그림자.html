@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>box-shadow</title>
+    <style>
+        li{
+            width: 300px;
+            height: 200px;
+            margin-bottom: 30px;
+            font-size: 50px;
+            background-color: aquamarine;
+        }
+        li:nth-child(1){
+            box-shadow: 10px 10px 10px red;
+        }
+        li:nth-child(2){
+            box-shadow: 10px 10px 10px inset red;
+        }
+        li:nth-child(3){
+            text-shadow: 10px 10px 10px red;
+        }
+    </style>
+</head>
+<body>
+    <h1>box-shadow : 요소박스의 그림자</h1>
+    <p>
+        box-shadow : offset-x / offset-y / blur / color; (외부 그림자) <br>
+        box-shadow : offset-x / offset-y / blur / inset / color; (내부 그림자)
+        <!-- inset 추가 -->
+    </p>
+    <p>
+        text-shadow : offset-x offset-y blur color; 와 같은 느낌, 글자냐 박스냐의 차이
+    </p>
+    <!-- 예제 -->
+    <ul>
+        <li>box1</li>
+        <li>box2</li>
+        <li>box3</li>
+    </ul>
+</body>
+</html>

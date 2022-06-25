@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>transform</title>
+    <style>
+        div {
+            width: 200px;
+            height: 200px;
+            margin-bottom: 120px;
+            background-color: blueviolet;
+        }
+        .translate{
+            transform: translate(50px , 30px);
+        }
+        .scale {
+            transform: scale(0.5 , 1.5);
+        }
+        /* 크기변경 */
+        .rotate {
+            transform: rotate(60deg);
+        }
+        /* 회전 */
+        .skew {
+            transform: skew(50deg , 30deg);
+        }
+        /* 뒤틀기 */
+        .t2{
+            transform: translate(80px ) scale(1.5) rotate(70deg);
+        }
+        /* 여러가지 속성 가능 */
+
+        /* 비교 */
+        ul::after{
+            content: "";
+            display: block;
+            clear: both;
+        }
+        ul{
+            width: 400px;
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            
+        }
+        li{
+            float: left;
+            width: 120px;
+            height: 50px;
+            margin: 0 5px 5px 0 ;
+            background-color: chartreuse;
+        }
+        .p {
+            position: relative;
+        }
+        .p > li:nth-child(2) {
+            position: absolute;
+            top: 25px;
+            left: 40px;
+            background-color: blue;
+        }
+        /* position은 relative로 기준점이 잡혀있는 곳을 기준으로 해서 위치를 이동시킨다 */
+        .t > li:nth-child(2) {
+            transform: translate(40px , 25px);
+            background-color: blue;
+        }
+        /* translate는 자기 자신이 원래 있던 자리를 기준으로 해서 위치를 이동한다 */
+        
+    </style>
+</head>
+<body>
+    <h1>transform : 요소를 여러가지 방법으로 변형</h1>
+    <ol>
+        <li>
+            translate : 위치이동 
+            translateX / translateY
+        </li>
+        <li>
+            scale : 크기변형 <br>
+            글자랑 사진도 같이 억지로 구겨서 바꾸기 때문에 잘 사용은 안한다. <br>
+            scaleX / scaleY
+        </li>
+        <li>
+            rotate : 회전 <br>
+            rotateX / rotateY
+        </li>
+        <li>
+            skew : 뒤틀기 <br>
+            잘 사용하지는 않음 <br>
+            skewX / skewY
+        </li>
+    </ol>
+    <br><br>
+    <!-- 예시 -->
+    <div class="translate">
+        transform : translate(X , Y)
+    </div>
+    <div class="scale">
+        transform : scale (가로 N배 , 세로 N배)
+    </div>
+    <div class="rotate">
+        transform : rotate(각도deg);
+    </div>
+    <div class="skew">
+        transform : skew(각도deg , 각도deg);
+    </div>
+    <div class="t2">
+        두가지 이상 적용
+    </div>
+    <br><br>
+
+    <h3>translate 와 position의 비교</h3>
+    <p><mark>translate</mark></p>
+    <ul class="p">
+        <li>box1</li>
+        <li>box2</li>
+        <li>box3</li>
+        <li>box4</li>
+        <li>box5</li>
+        <li>box6</li>
+    </ul>
+    <p><mark>position</mark></p>
+    <ul class="t">
+        <li>box1</li>
+        <li>box2</li>
+        <li>box3</li>
+        <li>box4</li>
+        <li>box5</li>
+        <li>box6</li>
+    </ul>
+</body>
+</html>

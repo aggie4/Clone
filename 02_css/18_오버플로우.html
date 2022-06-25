@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>overflow</title>
+    <style>
+        div {
+            width: 400px;
+            height: 120px;
+            margin-bottom: 100px;
+            background-color: aqua;
+        }
+        .hidden {
+            overflow: hidden;
+        }
+        /* 정해진 크기에 컨텐츠를 잘라넣음 */
+        /* 많이 사용 */
+        .auto {
+            overflow: auto;
+        }
+        /* 정해진 크기에 콘텐츠가 잘리진 않고 스크롤 생성 */
+        .scroll {
+            overflow: scroll;
+        }
+        /* 가로와 세로의 스크롤이 생성 */
+        .visible{
+            overflow: visible;
+        }
+        /* 아무런 변화가 없다 */
+        /* 예제2 */
+        .scroll2{
+            overflow-x: scroll;
+            overflow-y: hidden;
+        }
+        .scroll2 > .scroll2_inner{
+            width: 800px;
+            height: 400px;
+            background-image: linear-gradient(to right , red , blue);
+        }
+        /* 예제3 */
+        .over{
+            width: 400px;
+            height: 400px;
+            border-radius: 50%;
+            overflow: hidden;
+        }
+        .over > img{
+            height: 100%;
+            
+        }
+        /* 부모 요소의 크기를 100% 사용 */
+        .back_img{
+            width: 400px;
+            height: 400px;
+            background-image: url(./images/city.jpg);
+            background-size: cover;
+            background-position: center center;
+            border-radius: 50%;
+            
+        }
+        /* 사진을 가운데로 옮기는 방법 */
+        
+    </style>
+</head>
+<body>
+    <h1>overflow : 지정한 너비보다 내용이 넘칠경우에 사용</h1>
+    <p>hidden , auto , scroll , visible</p>
+    <br>
+    <!-- 예시 -->
+    <div class="hidden">
+        휴대폰UI/UX기획자 <br>
+        휴대폰의 편리한 사용자 인터페이스를 제공하기 위하여 사용자의 요구사항을 분석한다.
+        하드웨어 특성을 고려한 UI/UX의 기능을 분석하여 UI/UX 디자인을 검토한다.
+        검토한 UI/UX의 기능을 바탕으로 UI/UX 디자인을 기획한다.
+        It analyzes user requirements to provide a convenient user interface for mobile phones.
+        UI/UX design is reviewed by analyzing functions of UI/UX considering hardware characteristics.
+        Based on the functions of UI/UX reviewed, UI/UX design is planned.
+    </div>
+    <!-- hidden -->
+    <div class="auto">
+        휴대폰UI/UX기획자 <br>
+        휴대폰의 편리한 사용자 인터페이스를 제공하기 위하여 사용자의 요구사항을 분석한다.
+        하드웨어 특성을 고려한 UI/UX의 기능을 분석하여 UI/UX 디자인을 검토한다.
+        검토한 UI/UX의 기능을 바탕으로 UI/UX 디자인을 기획한다.
+        It analyzes user requirements to provide a convenient user interface for mobile phones.
+        UI/UX design is reviewed by analyzing functions of UI/UX considering hardware characteristics.
+        Based on the functions of UI/UX reviewed, UI/UX design is planned.
+    </div>
+    <!-- auto -->
+    <div class="scroll">
+        휴대폰UI/UX기획자 <br>
+        휴대폰의 편리한 사용자 인터페이스를 제공하기 위하여 사용자의 요구사항을 분석한다.
+        하드웨어 특성을 고려한 UI/UX의 기능을 분석하여 UI/UX 디자인을 검토한다.
+        검토한 UI/UX의 기능을 바탕으로 UI/UX 디자인을 기획한다.
+        It analyzes user requirements to provide a convenient user interface for mobile phones.
+        UI/UX design is reviewed by analyzing functions of UI/UX considering hardware characteristics.
+        Based on the functions of UI/UX reviewed, UI/UX design is planned.
+    </div>
+    <!-- scroll -->
+    <div class="visible">
+        휴대폰UI/UX기획자 <br>
+        휴대폰의 편리한 사용자 인터페이스를 제공하기 위하여 사용자의 요구사항을 분석한다.
+        하드웨어 특성을 고려한 UI/UX의 기능을 분석하여 UI/UX 디자인을 검토한다.
+        검토한 UI/UX의 기능을 바탕으로 UI/UX 디자인을 기획한다.
+        It analyzes user requirements to provide a convenient user interface for mobile phones.
+        UI/UX design is reviewed by analyzing functions of UI/UX considering hardware characteristics.
+        Based on the functions of UI/UX reviewed, UI/UX design is planned.
+    </div>
+    <!-- visible -->
+    <!-- 예제2 -->
+    <div class="scroll2">
+        <div class="scroll2_inner">
+
+        </div>
+    </div>
+    <div class="over">
+        <img src="./images/city.jpg" alt="도시 야경">
+    </div>
+    <div class="back_img">
+
+    </div>
+</body>
+</html>

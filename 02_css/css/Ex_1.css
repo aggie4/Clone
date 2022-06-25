@@ -1,0 +1,37 @@
+@charset "utf-8";
+* {
+    margin: 0;
+    padding: 0;
+    
+}
+h4{
+    font-size: 14px;
+}
+p{
+    font-size: 13px;
+}
+
+.shop{
+    width: 500px;
+    height: 520px;
+    margin: 0 auto;
+    background-color: palevioletred;
+    
+}
+.shop_list{
+    content: "";
+    display: block;
+    clear: both;
+}
+.shop_box {
+    margin: 10px 0 10px 20px;
+    float: left;
+    text-align: center;
+}
+.shop_box img{
+    width: 140px;
+    height: 200px;
+}
+.shop_box h4 p {
+    display: inline-block;
+}

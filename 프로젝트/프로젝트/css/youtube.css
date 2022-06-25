@@ -1,0 +1,107 @@
+@charset "utf-8";
+:root{
+    /* color */
+    --while-color: #fff;
+    --block-color: #140a00;
+    --blue-color: #045fd4;
+    --red-color: #ff0000;
+    --grey-dark-color: #909090;
+    --grey-light-color: #e0e0e0;
+
+    /* size */
+    --padding:12px;
+    --avater-size: 36px;
+    /* font-size */
+    --font-large: 18px;
+    --font-medium: 14px;
+    --font-small: 12px;
+    --font-micro: 10px;
+}
+/* root */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul {
+    list-style: none;
+}
+button,
+button:focus{
+    border: none;
+    cursor: pointer;
+    outline: none;
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    padding: var(--padding);
+    background-color: var(--block-color);
+    color: var(--while-color);
+}
+.nav .logo {
+    font-size: var(--font-large);
+    color: var(--red-color);
+}
+.nav .logo .title {
+    color: var(--while-color);
+}
+.nav > .icons > i:nth-child(1){
+    margin-right: var(--padding);
+}
+/* header */
+.play{
+    position: sticky;
+    top: 0;
+    text-align: center;
+    background-color: var(--block-color);
+}
+
+.play  video{
+    width: 100%;
+    height: 100%;
+    max-width: 1000px;
+}
+/* video */
+
+.box {
+    padding: var(--padding);
+}
+.box > .data >.hashtags {
+    display: flex;
+    font-size: var(--font-small);
+    color: var(--blue-color);
+}
+.box > .data > .hashtags > li {
+    margin-right: var(--padding);
+}
+.box > .data > .titleAndButton {
+    display: flex;
+}
+.box > .data > .titleAndButton > .title {
+    font-size: var(--font-medium);
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+}
+.box > .data > .titleAndButton > .title > .title_button {
+    width: 100%;
+}
+.box > .data > .views > .views {
+    font-size: var(--font-small);
+    color: var(--grey-light-color);
+}
+.actions {
+    display: flex;
+    justify-content: space-around;
+}
+.actions  button {
+    display: flex;
+    flex-direction: column;
+    font-size: var(--font-medium)
+}
+.actions button i {
+    margin-bottom: calc(var(--padding) / 2 );
+}

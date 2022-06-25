@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>문자관련 스타일1</title>
+</head>
+<body>
+    <div>
+        <h1>문자관련 스타일</h1>
+        <ol>
+            <li>
+                <h2>font-size : 글자 크기조정</h2>
+                <p>단위 : px , % , em , rem</p>
+                <p>em : 부모요소의 사이즈를 기준으로 곱하기 라고 생각하면 된다</p>
+
+                <!-- 예시 -->
+                <p style="font-size: 20px;">
+                    <span style="font-size: 1.5em;">
+                        휴대폰 UI/UX 기획자
+                    </span>
+                        휴대폰의 편리한 사용자 인터페이스를 제공하기 위하여 사용하즤 요구사항을 분석한다.
+                </p>
+                <!-- span 태그의 부모요소인 p태그의 폰트사이즈가 20px이므로 1em은 20px, 즉 1.5em은 20 x 1.5가 된다
+                     즉 span태그의 폰트사이즈는 30px -->
+            </li>
+            <!-- 폰트사이즈 -->
+            <li>
+                <h2>font-family : 글자체 조정</h2>
+                <p>
+                    font-family : dotum; -> 영문 글자체 이름을 쓸 경우에는 속성값에 영문 글자체명을 적어주면 된다.
+                </p>
+                <p>
+                    font-family : '돋음'; -> 한글글자체 이름을 쓸 경우에는 속성값에 작은따옴표 ''안에 한글 글자체명을 적어주면 된다.
+                </p>
+                <!-- 예제 -->
+                <p style="font-size: 20px; font-family: '궁서';">
+                    <span style="font-size: 1.5em; font-family: '맑은고딕';">
+                        휴대폰 UI/UX 기획자
+                    </span>
+                    휴대폰의 편리한 사용자 인터페이스를 제공하기 위하여 사용하즤 요구사항을 분석한다.
+                </p>
+            </li>
+            <!-- font-family -->
+            <li>
+                <h2>font-weight : 글자 두께 조정</h2>
+                <p>
+                    속성값 : normal , bold , bolder , lighter , 별도의 단위 사용 없이 숫자 100부터 100단위로 900까지 쓸 수 있다
+                    normal : 400정도 , 그 이상은 bold 그 이하는 lighter 이라고 생각하면 된다
+                </p>
+                <!-- 예제 -->
+                <p style="font-size: 20px; font-weight: bold;">
+                    <span style="font-size: 1.5em; font-weight: 400;">
+                        휴대폰 UI/UX 기획자
+                    </span>
+                        휴대폰의 편리한 사용자 인터페이스를 제공하기 위하여 사용하즤 요구사항을 분석한다.
+                </p>
+            </li>
+            <!-- font-weight -->
+            <li>
+                <h2>line-height : 행간(줄과 줄 사이 간격) 조정</h2>
+                <p>
+                    단위 : px , % , em
+                </p>
+                <p>
+                    글자 크기가 클수록 더 크게 줘야한다. 글자 크기보다 작으면 글자가 겹치는 현상이 생긴다.
+                </p>
+                <p>
+                    통상적으로 작성되는 본문의 행간은 1.4 ~ 1.6 em 정도가 적절하다고 생각함
+                </p>
+                <p>
+                    줄이 1줄일 경우에는 행간 값이 하단 높이값으로 된다. 
+                    그래서 글자가 1줄만 있을때에는 높이값이 없이 line-height 값을 높이값으로 주면 가로 가운데 정렬이 이루어진다
+                </p>
+                <!-- 예시 -->
+                <p style="line-height: 1.6em;">
+                    <span style="font-size: 1.5em;">
+                        휴대폰 UI/UX 기획자
+                    </span>
+                    휴대폰의 편리한 사용자 인터페이스를 제공하기 위하여 사용하즤 요구사항을 분석한다.
+                </p>
+                <!-- line-height -->
+            </li>
+            <li>
+                <h2>color : 글자 색상을 조정</h2>
+                <p>색상명(red, green , blue 등등 정확한 영문 색상명이 들어야 한다.) <br>
+                    색상코드(#000000, #ffffff등등) 도 사용할 수 있다. 앞에 꼭 #을 붙여야 한다 <br>
+                    6개의 숫자 또는 영문이 반복되는 경우에는 3개만 적어도 사용이 가능하다(#000000 = #000; , #bbbbbb = #bbb; 등등)brown
+                    rgb컬러 (N , N, N, 0~1사이 소수점)(red수치 , green수치 , blue수치, 오퍼시티(투명도값) 수치에 들어가는 값은 0~255까지 사용 가능)
+                </p>
+                <!-- 예제 -->
+                <p style="color: red;">글자색 변경(색상명)</p>
+                <p style="color: #f56451;">글자색 변경(색상코드)</p>
+                <p style="color: rgba(red, green, blue, 0.5);">글자색변경</p>
+            </li>
+            <!-- color -->
+            <li>
+                <h2>letter-spacing : 자간 조정</h2>
+                <p>
+                    단위 : px , em
+                </p>
+                <p>
+                    음수로 들어오면 자간이 줄어든것이다.
+                </p>
+                <p style="font-size: 50px; font-weight: 900px; letter-spacing: -30px;">자간조절하기</p>
+            </li>
+            <!-- letter-spacing -->
+            <li>
+                <h2 style="text-align: center;">text-align : 글자 정렬</h2>
+                <p>
+                    속성값 : left , right , center , justify(맞춤정렬)
+                </p>
+            </li>
+        </ol>
+    </div>
+</body>
+</html>

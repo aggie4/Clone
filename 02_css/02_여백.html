@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>margin / padding</title>
+</head>
+<body>
+    <div>
+        <!-- margin -->
+        <h1>margin : 요소의 바깥 여백</h1>
+        <p>단위 : px , % auto(정해준 너비를 없앨 때 사용)</p>
+        <p>태그안에 첫번째 자식은 부모요소와 같이 상단 마진값을 가진다.</p>
+        <!-- 마진 예시 -->
+    </div>
+    <div style="width: 200px; height: 200px; background-color: blue; margin: 100px;">
+        <p style="width: 50px; height: 50px; background-color: brown; margin: 20px;">box1</p>
+    </div>
+    <div>
+        <!-- padding -->
+        <h1>padding : 요소의 안쪽 여백</h1>
+        <p>단위 : px , % , auto(정해준 너비를 없앨 때)</p>
+    </div>
+    <!-- 패딩 예시 -->
+    <div style="width: 200px; height: 200px; background-color: blueviolet; padding: 50px;">
+        <p>box2</p>
+    </div>
+    <div>
+        <h2>margin-top / margin-bottom / margin-left / margin-right</h2>
+        <p style="width: 200; height: 100px; background-color: aquamarine; margin-top: 50px; margin-bottom: 30px; margin-left :80px; margin-right: 200px;">
+            200*100 / 위50 , 아래30 / 왼100 , 오른20
+        </p>
+    </div>
+    <br><br>
+    <div>
+        <h2>padding-top / padding-bottom / padding-left / padding-right</h2>
+        <p style="width: 2000px; height: 100px; background-color: darkcyan; padding-top: 30px; padding-bottom: 80px; padding-left: 50px; padding-right: 200px;">
+            200*100 / 위30,아래80,왼50,오른200
+        </p>
+    </div>
+    <div>
+        <p>
+            <strong>마진겹침현상</strong> :마진은 옆으로 또는 위, 아래로 값이 겹쳐질 경우에 마진값들이 합쳐지는게 아니라, 더 큰 쪽의 마진값이 적용된다
+        </p>
+    </div>
+    <div>
+        <h2>margin / padding의 값을 주는 방법</h2>
+        <p>
+            margin이나 padding에 값을 1개 초과해서 주면 값을 주는 만큼 방향으로 여백이 생긴다.
+        </p>
+        <p>
+            margin / padding : Npx;
+            사방으로 Npx만큼 여백이 들어온다
+        </p>
+        <p>
+            margin / padding : Npx Npx;
+                           위/아래 , 왼/오른
+        </p>
+        <p>
+            margin / padding : Npx Npx Npx;
+                               위   왼/아래  아래
+        </p>
+        <p>
+            margin / padding : Npx Npx Npx Npx;
+                               위   오   아  왼
+        </p>
+        <!-- 예시 -->
+        <p style="width: 200px; height: 100px; background-color: darkblue; padding: 30px 50px 80px 100px;">
+            box3
+        </p>
+        <!-- 오른쪽으로만 padding 쓰고싶다의 예시 -->
+        <p style="width: 200px; height: 100px; background-color: chocolate; padding: 0 100px 0 0;">
+            box4
+        </p>
+        <div>
+            <p>
+                p태그에 생기는 기본 여백을 없애려면 margin 속성의 속성값을 0으로 주면 된다.
+            </p>
+            <p>
+                a태그 , span태그와 같은 인라인에는 너비와 높이값은 적용되지 않는다.
+            </p>
+        </div>
+        <!-- 예시 -->
+        <div style="width: 300%; height: 300px; margin: 100px 0 200px 0; background-color: darkmagenta;">
+            80% * 300 / 위100 아래200
+            <span style="width: 100px; height: 100px; background-color: teal; margin: 0 0 0 20px;">100*100 / 왼20</span>
+            <a href="" style="width: 100px; height: 100px; background-color: sienna; margin: 0 0 0 50px; padding: 30px;">100*100 / 왼50</a>
+            <div style="width: 100px; height: 100px; background-color: yellow;">100*100</div>
+            <div style="width: 100px; height: 50px; background-color: violet;">100*50</div>
+            <p style="width: 100px; height: 50px; background-color: tomato; margin: 0;">100*50 / 여백없음</p>
+        </div>
+    </div>
+    <div>
+        <h1><mark>margin: 0 auto;</mark></h1>
+        <!-- 가운데로 옮기기위한 속성 -->
+        <p>너비값이 정해진 요소를 화면성(띄워진 창의 크기에서) 또는 내 부모요소에서 중간정렬을 위한 값이다.</p>
+        <p>매번 너비가 바뀌므로 정확하게 수치상으로 계산하는 것은 비효율적이다. 반응형의 기초 작업의 일부 , 많이 사용된다</p>
+        <p>글자만 중간에 보내고 싶다고 박스를 만들지 않고 그냥 사용하면 안된다. 글자 정렬은 다른 속성이므로 무조건 박스를 만들어서 기본 너비값을 넣어주고 사영해야한다.</p>
+        <p>나중에 작성한 여백값이 우선순위로 적용된다.</p>
+        <p>위에 여백 값을 주는 방버에서 2개 값을 적어 사용하는 것과 같은 방법으로 사용가능하다. 예를들어) Npx auto 라고 입력하면 위/아래에 Npx 만큼 여백을 주고 좌/우 로는 가운데 정렬된다</p>
+        <!-- 예시 -->
+        <p style="width: 150px; height: 100px; background-color: seagreen; margin: 100px auto;">
+            중간정렬1
+        </p>
+        <p style="width: 50%; height: 200px; background-color: brown; margin: 0 auto;">
+            중간정렬2
+        </p>
+    </div>
+</body>
+</html>

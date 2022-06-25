@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>선택자</title>
+    <style>
+        li{
+            font-size: 15px;
+        }
+        /* 태그선택자 / 태그만 불러내는 것 */
+        .an{
+            color: orange;
+        }
+        /* 클래스선택자 / 클래스만 불러내는 것. */
+        #cup{
+            color: blue;
+        }
+        /* 아이디선택자 / 아이디만 불러내는 것 */
+
+        .shin, .jja{
+            color: blueviolet;
+        }
+        /* 복합 선택자 / 여러가지를 불러내는 것 (,사용) */
+
+        ul li{
+            font-size: 18px;
+        }
+        /* 하위 선택자 / 하위 요소들을 불러내는 것 */
+
+        ul a {
+            font-weight: 700;
+        }
+        /* 하위 선택자 / 자식 요소 뿐만 아니라 모든 하위 요소들을 불러내는 것 */
+
+        .jjam > ul{
+            color: aqua;
+        }
+        /* 자식 선택자 / 자식요소를 불러내는 것  (>사용)*/
+
+        p.yook{
+            color: bisque;
+        }
+        /* 종속 선택자 / 태그의 종속된 클래스를 불러내는 것  띄어쓰기x */
+
+        .bi + li{
+            font-size: 10px;
+        }
+        /* 인접 선택자 / +를 사용해서 인접해 있는 태그나 , 다음에 오는 것들을 불러내는 것 */
+
+        .jin2 ~ li{
+            font-size: 12px;
+        }
+        /* 형제 선택자 / ~을 사용해서 자기 자신을 빼고 뒤에 나오는 형제요소들을 불러내는 것 */
+
+        li:nth-child(5){
+            color: tomato;
+        }
+        /* 순서 선택자 / ()순서를 넣어서 순서의 것만 불러내는 것. */
+
+        body > ul > li:first-child{
+            text-decoration: underline;
+        }
+        li:last-child{
+            font-style: italic;
+        }
+        /* nth-child 의 다양한 활용방법 */
+
+        li:nth-child(even){
+            font-family: '궁서';
+        }
+        /* nth-child(even) / 짝수만 불러올 때 */
+
+        li:nth-child(odd){
+            font-family: '돋움';
+        }
+        /* nth-child(odd) / 홀수만 불러올 때*/
+
+        li:nth-child(3n){
+            font-size: 30px;
+        }
+        /* nth-child(3n) / 배수 선택 시 */
+
+        li:nth-child(3n+2){
+            color: red;
+        }
+        /* nth-child(3n+2) / +뒤에 숫자에서부터 시작해서 앞에 숫자배수 만큼 배수 선택*/
+
+        .yook#sa {
+            text-decoration: line-through;
+        }
+        /* 클라스와 아이디값을 같이 선택 가능 (띄어쓰기 사용x) */
+
+        .jjam li:not(:nth-child(3)){
+            color: violet;
+        }
+        .jjam li:not(:last-child){
+            font-size: 35px;
+        }
+        /* 제외선택자 / 괄호안에 선택된 요스는 빼고 나머지를 불러내는 것 */
+    </style>
+</head>
+<body>
+    <h1>선택자</h1>
+    <ul>
+        <li class="an">안성탕면</li>
+        <li class="shin">신라면</li>
+        <li class="jin">진라면</li>
+        <li class="nu">
+            <a href="#">너구리</a>
+        </li>
+        <li class="cham">참깨라면</li>
+        <li class="jja">짜파게티</li>
+        <li class="yeol">열라면</li>
+        <li class="hae">
+            해물라면
+            <ul>
+                <li>새우라면</li>
+                <li>
+                    홍합라면
+                </li>
+                <li>꽃게라면</li>
+            </ul>
+        </li>
+        <li class="yook" id="sa">육계장 사발면</li>
+        <li class="yook" id="cup">육게장 큰컵</li>
+        <li class="cup">컵누들</li>
+        <li class="bi">비빔면</li>
+        <li class="ra">라면볶이</li>
+        <li class="jjam">
+            짬뽕라면
+            <ul>
+                <li class="jin2">진짬뽕</li>
+                <li>오징어짬뽕</li>
+                <li>나가사끼짬뽕</li>
+                <li>볶음짬뽕</li>
+            </ul>
+        </li>
+    </ul>
+    <p class="yook">
+        p태그의 작성된 육계장
+    </p>
+</body>
+</html>

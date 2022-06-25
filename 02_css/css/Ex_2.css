@@ -1,0 +1,63 @@
+@charset "utf-8";
+
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+ul > li:nth-child(1){
+    padding: 10px 0 10px 0 ;
+    color: green;
+}
+
+ul > li:nth-child(2){
+    font-weight: bold;
+}
+
+ul > li:nth-child(3){
+    padding: 10px 0 10px 0;
+    font-size: 14px;
+}
+
+ul > li:nth-child(4){
+    font-size: 14px;
+}
+
+.am::after{
+    content: "";
+    display: block;
+    clear: none;
+}
+.am{
+    width: 80%;
+    height: 500px;
+    margin: 0 auto  ;
+    background-color: bisque;
+}
+/* 배경 */
+.news{
+    width: 50%;
+    float: left;
+    margin: 20px;
+}
+
+.news_list > img{
+    width: 100%;
+    height: 300px;
+}
+/* 본문1 */
+.news_box {
+    width: 400px;
+    height: 130px;
+    float: left;
+    margin-top: 20px;
+}
+
+.news_box > img{
+    width: 35%;
+    height: ;
+    float: left;
+    margin-right: 10px;
+}
+

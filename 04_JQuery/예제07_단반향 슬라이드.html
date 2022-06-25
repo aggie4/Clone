@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>단방향 슬라이드</title>
+        <style>
+            /* reset */
+            * {
+                margin: 0;
+                padding: 0;
+            }
+            ul {
+                list-style: none;
+            }
+            /* photo */
+            #wrap {
+                width: 600px;
+                margin: 50px auto;
+            }
+            .photo {
+                position: relative;
+                width: 600px;
+                height: 300px;
+                overflow: hidden;
+            }
+            .photoBox {
+                position: absolute;
+                top: 0;
+                left: 100%;
+            }
+            .photoBox:nth-child(1) {
+                left: 0;
+            }
+            /* pager */
+
+            .pager {
+                margin-top: 30px;
+            }
+            .pager ul {
+                display: flex;
+                justify-content: center;
+                /* 전체적인 크기의 가운데라는 뜻 */
+            }
+            .pager li {
+                width: 15px;
+                height: 15px;
+                border-radius: 50%;
+                margin: 0 15px;
+                background-color: #ccc;
+                text-indent: -9999px;
+                cursor: pointer;
+            }
+            .pager .active {
+                background-color: blue;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="wrap">
+            <div class="photo">
+                <div class="photoBox"><img src="./img/food02.jpg" alt="" /></div>
+                <div class="photoBox"><img src="./img/food03.jpg" alt="" /></div>
+                <div class="photoBox"><img src="./img/food04.jpg" alt="" /></div>
+                <div class="photoBox"><img src="./img/food05.jpg" alt="" /></div>
+            </div>
+            <div class="pager">
+                <ul>
+                    <li class="active">01</li>
+                    <li>02</li>
+                    <li>03</li>
+                    <li>04</li>
+                </ul>
+            </div>
+        </div>
+        <script src="https://code.jquery.com/jquery-1.12.4.min.js "></script>
+        <script src="./js/ex07.js"></script>
+    </body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>예제01</title>
+    <style>
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        .box {
+            width: 300px;
+            margin: 0 auto;
+        }
+        .box .photo ul li {
+            display: none;
+        }
+        .box .photo ul li:first-child {
+            display: block;
+        }
+        .box .btn ul {
+            display: flex;
+            justify-content: center;
+        }
+        .box .btn ul li {
+            width: 15px;
+            height: 15px;
+            margin: 0 5px;
+            border-radius: 50%;
+            background: #bbb;
+            text-indent: -9999px;
+        }
+        .box .btn ul .on{
+            background-color: blueviolet;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="photo">
+            <ul>
+                <li><img src="./img/bottle_01.jpg" alt=""></li>
+                <li><img src="./img/bottle_02.jpg" alt=""></li>
+                <li><img src="./img/bottle_03.jpg" alt=""></li>
+                <li><img src="./img/bottle_04.jpg" alt=""></li>
+                <li><img src="./img/bottle_05.jpg" alt=""></li>
+            </ul>
+        </div>
+        <div class="btn">
+            <ul>
+                <li class="on">1</li>
+                <li>2</li>
+                <li>3</li>
+                <li>4</li>
+                <li>5</li>
+            </ul>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js "></script>
+    <script src="./js/ex01.js"></script>
+</body>
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>z-index</title>
+    <style>
+        ul {
+            position: relative;
+            width: 100%;
+            height: 100vh;
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            background-color: blueviolet;
+            z-index: 100;
+        }
+        li {
+            width: 300px;
+            height: 300px;
+        }
+        li:nth-child(1){
+            position: absolute;
+            top: 100px;
+            left: 200px;
+            background-color: aqua;
+            z-index: 16;
+        }
+        li:nth-child(2){
+            position: relative;
+            z-index: 15;
+            background-color: bisque;
+        }
+        li:nth-child(3){
+            position: absolute;
+            top: 200px;
+            right: 300px;
+            z-index: -10;
+            background-color: red;
+        }
+        li:nth-child(4){
+            position: absolute;
+            top: 380px;
+            left: 250px;
+            background-color: blue;
+            z-index: -10;
+        }
+        li:nth-child(5){
+            position: absolute;
+            top: 300px;
+            left: 400px;
+            z-index: 2;
+            background-color: cadetblue;
+        }
+        .box6{
+            position: absolute;
+            top: 550px;
+            right: 300px;
+            width: 200px;
+            height: 200px;
+            z-index: 111;
+            background-color: darkgoldenrod;
+        }
+        /* z-index  */
+    </style>
+</head>
+<body>
+    <h1>z-index : 요소의 컵치는 순서를 지정</h1>
+    <p>
+        음수 , 양수 모두 사용가능하다. 숫자가 높을수록 겹쳤을 때 더 위쪽으로 나타난다
+    </p>
+    <p>
+        반드시 position과 함께 사용(앱솔루트든 랠러티브든 간에 무조건 같이 써야함)
+    </p>
+    <p>
+        같은 순서값을 가진 요소는 더 나중에 작성된 요소가 더 나타난다.
+    </p>
+    <p>
+        형제태그가 아니더라도 position 값을 가진 요소끼리는 z-index값이 적용된다
+    </p>
+    <p>
+        '부모요소가 자식요소보다 앞으로 나온다'라는건 말이 안된다. 음수 값을 줘서
+    </p>
+    <p>
+        요소의 위치값이 변경되지 않아야할 경우 position:relative값을 주어서 z-index와 사용해주면 된다
+    </p>
+    <br>
+    <!-- 예시 -->
+    <ul>
+        <li>box1</li>
+        <li>box2</li>
+        <li>box3</li>
+        <li>box4</li>
+        <li>box5</li>
+    </ul>
+    <p class="box6">box6</p>
+</body>
+</html>

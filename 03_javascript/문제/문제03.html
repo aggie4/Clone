@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>문제03</title>
+</head>
+<body>
+    <script>
+        let food = '햄버거';
+        switch (food) {
+            case '피자' :
+                console.log('피자를 주세요');
+                break;
+            case '햄버거' : 
+                console.log('햄버거를 주세요')
+                break;
+            default :
+                console.log('메뉴에 없는 음식입니다');
+        }
+        if (food == '피자') {
+            console.log('피자를 주세요');
+        } else if (food == '햄버거') {
+            console.log('햄버거를 주세요');
+        } else {
+            console.log('메뉴에 없는 음식입니다.');
+        }
+        console.log('');
+
+        let menu = food == '피자' ? '피자를 주세요' : food == '햄버거' ? '햄버거를 주세요.' : '메뉴에 없는 음식입니다.'
+        console.log(menu);
+    </script>
+</body>
+</html>

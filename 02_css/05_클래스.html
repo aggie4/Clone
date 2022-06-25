@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>class / id</title>
+    <style>
+        .rose{
+            color: red;
+        }
+        .Rose{
+            color: blue;
+        }
+        .fruit{
+            color: aqua;
+        }
+        h1{
+            color: green;
+        }
+        p {
+            font-size: 22px;
+        }
+        #flower{
+            font-size: 30px;
+            color: cadetblue;
+            font-weight: 700;
+        }
+        #baby{
+            font-size: 30px;
+        }
+        .ddd{
+            font-size: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <!-- id=wrap  전체적으로 감싸는 이름-->
+        <h1>class</h1>
+        <p>태그의 이름을 줄 때 사용, 여러개의 태그의 같은 이름을 사용할 수 있다. 띄워쓰기 하나로 하나의 태그에 여러개의 이름도 사용할 수 있다.</p>
+        <h1>id</h1>
+        <p>태그의 고유명칭을 줄 때 사용, 여러개의 태그에 같은 이름을 사용할 수 없다. 아이다와 클래스는 같은 이름으로 사용이 가능하다.</p>
+        <h2>규칙</h2>
+        <p>클래스나 아이디의 이름은 영어로 작성해야한다. 
+            대 / 소문자를 구분한다. 시작자리에 들어갈 수 있는 기호는 없다. 
+            기호는 영문을 사용한 다음 중간에_(언더바), ~(물결) 같은 것을 쓴 것과 같다.
+            관례적으로 내용과 관련이 있는 영문 이름으로 사용해야 한다.
+        </p>
+        <p>(내부 스타일 시트의 경우)해드태그와 타이틀태그 밑에 스타일태그 안에서 사용되어 진다.
+            중괄호{} 안에 들어갈 속성들을 작성한다.
+        </p>
+        <p>아이디는 #으로 호출 , 클래스는 .으로 호출한다. 나중에 적은 값이 우선순위로 적용된다.
+            클래스보다 아이디가 우선순위로 적용된다.
+        </p>
+        <ul>
+            클래스나 아이디의 이름을 작성하는 방법
+            <li>
+                Sbsacademyfrontend : 예시로 사용될 이름
+            </li>
+            <li>
+                카멜 케이스 (Camel case) : sbsAcacademyFrontend
+                <!-- 새로운 시작 단어 대문자 -->
+            </li>
+            <li>
+                스네이크 케이스(Snake Case) :  sbs_acacademy_front_end
+                <!-- 새로운 시작 단어 _ -->
+            </li>
+        </ul>
+        <br><br><br>
+        <!-- 예시 -->
+        <p id="sun">해바라기</p>
+        <p class="rose">장미</p>
+        <p class="Rose">데이지</p>
+        <p class="tul">튤립</p>
+        <p class="ddd" id="baby">안개꽃</p>
+        <p id="flower">수선화</p>
+
+        <p class="fruit">포도</p>
+        <p class="fruit">딸기</p>
+        <p class="fruit ddd">사과</p>
+
+    </div>
+</body>
+</html>

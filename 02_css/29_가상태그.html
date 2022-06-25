@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>가상태그</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        ul {
+            list-style: none;
+        }
+        .before{
+            display: flex;
+            margin: 20px 10px;
+        }
+        .before > li {
+            margin: 0 10px;
+        }
+        .before > li::before {
+            /* 너비와 높이값을 이용하는 방법 */
+            /* content: "";
+            display: inline-block;
+            width: 4px;
+            height: 15px;
+            margin-right: 20px;
+            background-color: blueviolet; */
+
+            /* content 속성 값을 이용한 방법 */
+            content: "|";
+            display: inline-block;
+            margin-right: 20px;
+            font-weight: 700;
+            font-size: 15px;
+            color: red;
+        }
+        .after {
+            display: flex;
+        }
+        .after > li {
+            position: relative;
+            width: 100px;
+            line-height: 30px;
+            text-align: center;
+            background-color: blueviolet;
+            transition: all 1s;
+        }
+        .after > li::after {
+            content: "";
+            display: block;
+            width: 100%;
+            height: 4px;
+            background-color: red;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            transform: scaleX(0);
+            transition: all 1s;
+        }
+        .after > li:hover::after {
+            transform: scaleX(1);
+        }
+    </style>
+</head>
+<body>
+    <h1>::before / ::after  :  가상태그</h1>
+    <p>
+        요소의 앞이나 뒤에 가장의 공간을 만들어서 지정한 내용 또는 모양을 넣을 수 있음
+    </p>
+    <p>
+        content: "";과 display: block / inline-block; 를 꼭 넣어줘야함
+    </p>
+    <br>
+    <ul class="before">
+        <li>메뉴1</li>
+        <li>메뉴2</li>
+        <li>메뉴3</li>
+        <li>메뉴4</li>
+        <li>메뉴5</li>
+    </ul>
+    <ul class="after">
+        <li>
+            <p class="bg"></p>
+            <p class="text">메뉴1</p>
+        </li>
+        <li>메뉴2</li>
+        <li>메뉴3</li>
+        <li>메뉴4</li>
+        <li>메뉴5</li>
+    </ul>
+</body>
+</html>

@@ -1,0 +1,159 @@
+@charset "utf-8";
+
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    /* box-sizing: border-box; */
+}
+.list::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.list{
+    width: 100%;
+    margin: 0 20px 0 20px;
+}
+
+.list:hover > div > .text::after{
+    opacity: 0.3;
+}
+
+.list > div{
+    width: 100px;
+    height: 130px;
+    float: left;
+    transition: height 0.2s linear;
+}
+
+.list > div:hover{
+    height: 180px;
+    transition: height 0.2s linear;
+}
+
+.list > div:hover > span:before{
+    display: block;
+}
+
+.list > .new{
+    background-color: tomato;
+}
+
+.list > .new:hover > .text::after{
+    opacity: 1;
+}
+
+.list > .camera{
+    background-color: orange;
+}
+
+.list > .camera:hover > .text::after{
+    opacity: 1;
+}
+
+.list > .heart{
+    background-color: royalblue;
+}
+
+.list > .heart:hover > .text::after{
+    opacity: 1;
+}
+
+.list > .setting{
+    background-color: blue;
+}
+
+.list > .setting:hover > .text::after{
+    opacity: 1;
+}
+
+.list > .share{
+    background-color: darkblue;
+}
+
+.list > .share:hover > .text::after{
+    opacity: 1;
+}
+
+
+.list > .download{
+    background-color: slategrey;
+}
+
+.list > .download:hover > .text::after{
+    opacity: 1;
+}
+
+
+.list > div > .text{
+    /* 상자의 크기 마진 패딩 상자에 대한 속성 */
+    display: block;
+    padding-top: 80px;
+    /* 폰트나 컬러 */
+    color: #fff;
+    text-align: center;
+    /* 포지션 위치값 속성 */
+    position: relative;
+}
+
+.list > div > .text::before{
+    content: '';
+    display: none;
+    width: 50px;
+    height: 50px;
+    margin: -25px 0 0 -25px;
+
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    z-index: 5;
+}
+
+.list > div > .text::after{
+    content: '';
+    display: block;
+    width: 25px;
+    height: 25px;
+    margin: -12.5px 0 0 -12.5px;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    z-index: 10;
+}
+
+.list > .new > .text::after{
+    background: url(../img/New.png);
+    background-size: 100% 100%;
+}
+
+.list > .camera > .text::after{
+    background: url(../img/Camera.png);
+    background-size: 100% 100%;
+}
+
+.list > .heart > .text::after{
+    background: url(../img/Heart.png);
+    background-size: 100% 100%;
+}
+
+.list > .setting > .text::after{
+    background: url(../img/Setting.png);
+    background-size: 100% 100%;
+}
+
+.list > .share > .text::after{
+    background: url(../img/Share.png);
+    background-size: 100% 100%;
+}
+
+.list > .download > .text::after{
+    background: url(../img/Download.png);
+    background-size: 100% 100%;
+}
