@@ -1,0 +1,236 @@
+/* 
+    박스안에있는 글짜를 옮기는 방법
+    line-height, padding
+    호텔찾기처럼 가운데가 아닌 애매한 부분은
+    span태그로 묶어서 패딩으로 조진다
+*/
+#wrap {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+}
+.inner {
+    width: 92%;
+    height: 100px;
+    min-width: 1750px;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+.inner .logo {
+    width: 240px;
+    float: left;
+}
+.list ul {
+    display: flex;
+    justify-content: end;
+}
+.list > ul > li {
+    padding-left: 10px;
+    text-align: center;
+}
+.list li a {
+    display: block;
+    margin: 0 20px;
+    font-size: 16px;
+    color: #333;
+    line-height: 50px;
+}
+.list > ul > li .list-reservation {
+    min-width: 150px;
+    height: 50px;
+    border: 2px solid #94775f;
+    font-size: 15px;
+    color: #94775f;
+    line-height: 48px;
+}
+.list > ul > li .list-Search {
+    min-width: 150px;
+    height: 50px;
+    border: 2px solid #94775f;
+    background-color: #94775f;
+    line-height: 48px;
+    text-align: left;
+    padding-left: 23px;
+}
+.list > ul > li span {
+    position: relative;
+    display: inline-block;
+    font-size: 16px;
+    color: #fff;
+    font-weight: 600;
+    padding-right: 46px;
+}
+.list > ul > li span::after {
+    position: absolute;
+    top: 12px;
+    right: 8px;
+    content: '';
+    display: inline-block;
+    background-image: url(./img/ico_find_hotel.png);
+    width: 24px;
+    height: 24px;
+}
+.list .list-kr button {
+    min-width: 50px;
+    height: 50px;
+    color: #333;
+    border: 1px solid #333;
+}
+/* logo, list */
+.back-img {
+    position: relative;
+    max-width: 1920px;
+    height: 765px;
+    background-image: url(./img/visual_01B.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.back-img .back-img-list .img-h1 {
+    font-size: 50px;
+    color: #fff;
+    /* margin-bottom: 20px; */
+    line-height: 1.5;
+    /* margin-top: 50px; */
+    padding-top: 300px;
+    padding-left: 150px;
+    margin-bottom: 20px;
+}
+.back-img .back-img-list .img-text {
+    font-size: 24px;
+    color: #fff;
+    line-height: 1.5;
+    padding-left: 150px;
+    margin-bottom: 30px;
+}
+.back-img .back-img-list .img-a {
+    font-size: 16px;
+    color: #fff;
+    width: 170px;
+    height: 60px;
+    line-height: 56px;
+    border: 1px solid #fff;
+    box-sizing: border-box;
+    text-align: center;
+    display: inline-block;
+    margin-left: 150px;
+    margin-bottom: 20px;
+}
+.back-img > .button-list {
+    display: flex;
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+}
+.back-img > .button-list li {
+    display: inline-block;
+    padding: 0 5px;
+}
+.back-img > .button-list li button {
+    width: 50px;
+    height: 5px;
+    border: 1px solid #fff;
+    background-color: #333;
+}
+/* back-img */
+.main-promotion {
+    background-color: #fbfbfb;
+}
+.main-inner {
+    position: relative;
+    width: 100%;
+    max-width: 1750px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    padding: 80px 0;
+    padding-left: 490px;
+}
+.main-title {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 490px;
+    height: 100%;
+    padding: 80px;
+    box-sizing: border-box;
+    z-index: 1;
+}
+.main-promotion > .main-inner {
+    width: 100%;
+    /* min-height: 1750px; */
+    margin: 0 auto;
+}
+.main-inner > .main-title > .main-h1 {
+    font-size: 45px;
+    font-weight: bold;
+    line-height: 1;
+    letter-spacing: 6.75px;
+    margin-bottom: 30px;
+}
+.main-inner > .main-title > .main-text {
+    font-size: 22px;
+    line-height: 32px;
+    color: #b6ab97;
+}
+.main-inner > .main-button {
+}
+.img-list-box {
+    width: 100%;
+    display: inline-block;
+    padding: 15px;
+    box-sizing: border-box;
+}
+.img.list-box .main-button {
+    left: 300px;
+}
+.img-list-box ul {
+    display: flex;
+}
+.img-list-box ul li {
+    padding-left: 20px;
+}
+.img-list-box .list-box .list-inner {
+    display: block;
+    background-color: #fff;
+    border-top: 2px solid #333;
+}
+.img-list-box .list-box .img-text-list {
+    padding: 35px 20px;
+    position: relative;
+    z-index: 1;
+}
+.img-list-box .list-box .img-text-list .img-text {
+    font-size: 20px;
+    line-height: 30px;
+    width: 335px;
+    height: 30px;
+    color: #333;
+    display: block;
+    margin-bottom: 5px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.img-list-box .list-box .img-text-list .img-data {
+    font-size: 15px;
+    color: #999;
+}
+.img-list-box .list-box .img-text-list .img-label {
+    font-size: 15px;
+    line-height: 35px;
+    color: #fff;
+    background-color: #333;
+    min-width: 70px;
+    text-align: center;
+    display: inline-block;
+    position: absolute;
+    bottom: -15px;
+}
+.img-list-box .list-box .img {
+    width: 375px;
+    height: 285px;
+    background-color: #dedede;
+    overflow: hidden;
+    position: relative;
+}
