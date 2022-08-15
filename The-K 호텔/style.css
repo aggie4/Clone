@@ -304,3 +304,34 @@
     margin: -30px;
     position: static;
 }
+/* main-todo */
+.main-todo {
+    background-image: url(./img/todo_bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.main-todo .todo-title {
+    display: inline;
+    position: absolute;
+    top: 80px;
+    left: 80px;
+    width: 84px;
+    height: 458px;
+    text-indent: -9999px;
+    background-image: url(./img/todo_title.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.main-inner .main-todo-box {
+    position: relative;
+    padding: 30%;
+}
+.main-todo-box .main-todo-list {
+    width: 35px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
