@@ -13,363 +13,433 @@
     </head>
     <body>
         <div id="wrap">
-            <div class="inner">
-                <div class="logo">
-                    <a href="#"><img src="./img/logo_site.svg" alt="the-K" /></a>
+            <header id="header">
+                <div id="header-branch" class="active" style="display: none;">
+                    <div class="header-inner">
+                        <div class="header-title">호텔찾기</div>
+                        <a href="javascript:void(0);" class="close" onclick="find_branch();">
+                            <img src="./img/btn_top_close.png" alt="">
+                        </a>
+                        <ul class="header-list">
+                            <li>
+                                <div class="hotal-img">
+                                    <img src="./img/img_hotel1.png" alt="hotel1">
+                                </div>
+                                <a href="#" class="cover">
+                                    <span class="text-list">
+                                        <span class="text">The-K 호텔 서울</span>
+                                        <span class="more">
+                                            <img src="./img/btn_top_more.png" alt="more">
+                                        </span>
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <div class="hotal-img">
+                                    <img src="./img/img_hotel2.png" alt="img_hotel2">
+                                </div>
+                                <a href="#" class="cover">
+                                    <span class="text-list">
+                                        <span class="text">The-K 호텔 경주</span>
+                                        <span class="more">
+                                            <img src="./img/btn_top_more.png" alt="more">
+                                        </span>
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <div class="hotal-img">
+                                    <img src="./img/img_hotel3.png" alt="img_hotel3">
+                                </div>
+                                <a href="#" class="cover">
+                                    <span class="text-list">
+                                        <span class="text">The-K 지리산가족호텔</span>
+                                        <span class="more">
+                                            <img src="./img/btn_top_more.png" alt="more">
+                                        </span>
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <div class="hotal-img">
+                                    <img src="./img/img_hotel4.png" alt="img_hotel4">
+                                </div>
+                                <a href="#" class="cover">
+                                    <span class="text-list">
+                                        <span class="text">The-K 설악산가족호텔</span>
+                                        <span class="more">
+                                            <img src="./img/btn_top_more.png" alt="more">
+                                        </span>
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="list">
-                    <ul>
-                        <li><a href="#">로그인</a></li>
-                        <li><a href="#">예약조회</a></li>
-                        <li><button class="list-reservation">예약하기</button></li>
-                        <li>
-                            <button class="list-Search"><span>호텔찾기</span></button>
-                        </li>
-                        <li class="list-kr"><button>KR</button></li>
+                <div class="inner">
+                    <div class="logo">
+                        <a href="#"><img src="./img/logo_site.svg" alt="the-K" /></a>
+                    </div>
+                    <div class="list">
+                        <ul>
+                            <li><a href="#">로그인</a></li>
+                            <li><a href="#">예약조회</a></li>
+                            <li><button class="list-reservation">예약하기</button></li>
+                            <li>
+                                <button class="list-Search" onclick="find_branch();"><span>호텔찾기</span></button>
+                            </li>
+                            <li class="list-kr"><button>KR</button></li>
+                        </ul>
+                    </div>
+            </header>
+                <section class="back-img">
+                    <div class="back-img-list">
+                        <div class="img-h1"><h1>The-K 호텔 서울</h1></div>
+                        <div class="img-text"><p>최상의 서비스와 자연, 예술, 문화, 컨벤션이 함께 어우러진 고품격 커뮤니티 호텔</p></div>
+                        <div class="img-a"><a href="#">바로가기</a></div>
+                    </div>
+                    <div class="back-img-list">
+                        <div class="img-h1"><h1>The-K 호텔 경주</h1></div>
+                        <div class="img-text"><p>신라 천년의 고도 경주 보문관광단지 내에 위치한 특급호텔</p></div>
+                        <div class="img-a"><a href="#">바로가기</a></div>
+                    </div>
+                    <ul class="button-list">
+                        <li><button></button></li>
+                        <li><button></button></li>
+                        <li><button></button></li>
+                        <li><button></button></li>
                     </ul>
-                </div>
+                </section>
+                <section class="main-event promotion">
+                    <div class="main-inner">
+                        <div class="main-title">
+                            <div class="main-h1"><h1>PROMOTION</h1></div>
+                            <div class="main-text">
+                                <p>
+                                    The-K호텔앤리조트가 준비한 <br />
+                                    다양한 프로모션과 이벤트들을 <br />
+                                    만나보세요
+                                </p>
+                            </div>
+                            <div class="main-button">
+                                <button class="BACK"></button>
+                                <button class="NEXT"></button>
+                            </div>
+                        </div>
+                        <div class="img-list-box">
+                            <div class="list-box">
+                                <ul class="slider">
+                                    <li class="item">
+                                        <a href="#" class="list-inner">
+                                            <div class="img-text-list">
+                                                <div class="img-text">우첼로 겨울 특선 메뉴 출시</div>
+                                                <div class="img-data">2021. 11. 01 ~ 2022. 02. 28</div>
+                                                <div class="img-label">서울</div>
+                                            </div>
+                                            <div class="img">
+                                                <img src="./img/promotion_01.jpg" alt="첫번째사진" />
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="item">
+                                        <a href="#" class="list-inner">
+                                            <div class="img-text-list">
+                                                <div class="img-text">[한국교직원공제회원] 스몰웨딩 복지서비스 이벤트</div>
+                                                <div class="img-data">2021. 10. 07 ~ 2022. 12. 31</div>
+                                                <div class="img-label">서울</div>
+                                            </div>
+                                            <div class="img">
+                                                <img src="./img/promotion_02.jpg" alt="첫번째사진" />
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="item">
+                                        <a href="#" class="list-inner">
+                                            <div class="img-text-list">
+                                                <div class="img-text">休스테이 힐링 요금제</div>
+                                                <div class="img-data">2020. 06. 01 ~ 2022. 12. 31</div>
+                                                <div class="img-label">경주</div>
+                                            </div>
+                                            <div class="img">
+                                                <img src="./img/promotion_03.jpg" alt="첫번째사진" />
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="item">
+                                        <a href="#" class="list-inner">
+                                            <div class="img-text-list">
+                                                <div class="img-text">VIP Membership Club 회원모집</div>
+                                                <div class="img-data">2020. 06. 01 ~ 2022. 12. 31</div>
+                                                <div class="img-label">경주</div>
+                                            </div>
+                                            <div class="img">
+                                                <img src="./img/promotion_04.jpg" alt="첫번째사진" />
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="item">
+                                        <a href="#" class="list-inner">
+                                            <div class="img-text-list">
+                                                <div class="img-text">설맞이 선물세트</div>
+                                                <div class="img-data">2022. 01. 10 ~ 2022. 02. 06</div>
+                                                <div class="img-label">경주</div>
+                                            </div>
+                                            <div class="img">
+                                                <img src="./img/promotion_05.jpg" alt="첫번째사진" />
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="item">
+                                        <a href="#" class="list-inner">
+                                            <div class="img-text-list">
+                                                <div class="img-text">2022년 설날 선물 세트</div>
+                                                <div class="img-data">2022. 01. 03 ~ 2022. 01. 20</div>
+                                                <div class="img-label">서울</div>
+                                            </div>
+                                            <div class="img">
+                                                <img src="./img/promotion_06.jpg" alt="첫번째사진" />
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="item">
+                                        <a href="#" class="list-inner">
+                                            <div class="img-text-list">
+                                                <div class="img-text">더파크 송년 이벤트 명함 추첨 당첨자 발표</div>
+                                                <div class="img-data">2022. 01. 05 ~ 2022. 01. 29</div>
+                                                <div class="img-label">서울</div>
+                                            </div>
+                                            <div class="img">
+                                                <img src="./img/promotion_07.jpg" alt="첫번째사진" />
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="item">
+                                        <a href="#" class="list-inner">
+                                            <div class="img-text-list">
+                                                <div class="img-text">한식당 겨울특선메뉴</div>
+                                                <div class="img-data">2021. 12. 10 ~ 2022. 02. 28</div>
+                                                <div class="img-label">경주</div>
+                                            </div>
+                                            <div class="img">
+                                                <img src="./img/promotion_08.jpg" alt="첫번째사진" />
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="item">
+                                        <a href="#" class="list-inner">
+                                            <div class="img-text-list">
+                                                <div class="img-text">야외 웨딩 프로모션</div>
+                                                <div class="img-data">2021. 11. 18 ~ 2022. 02. 28</div>
+                                                <div class="img-label">서울</div>
+                                            </div>
+                                            <div class="img">
+                                                <img src="./img/promotion_09.jpg" alt="첫번째사진" />
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="item">
+                                        <a href="#" class="list-inner">
+                                            <div class="img-text-list">
+                                                <div class="img-text">더케이설악산가족호텔 트레킹 코스</div>
+                                                <div class="img-data">2021. 07. 02 ~ 2025. 01. 01</div>
+                                                <div class="img-label">설악산</div>
+                                            </div>
+                                            <div class="img">
+                                                <img src="./img/promotion_10.jpg" alt="첫번째사진" />
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="item">
+                                        <a href="#" class="list-inner">
+                                            <div class="img-text-list">
+                                                <div class="img-text">감포 자연산 돌미역 판매</div>
+                                                <div class="img-data">2021. 06. 05 ~ 2022. 12. 31</div>
+                                                <div class="img-label">경주</div>
+                                            </div>
+                                            <div class="img">
+                                                <img src="./img/promotion_11.jpg" alt="첫번째사진" />
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="item">
+                                        <a href="#" class="list-inner">
+                                            <div class="img-text-list">
+                                                <div class="img-text">한국교직원공제회원 전용 Fit Lounge 운영</div>
+                                                <div class="img-data">2022. 01. 01 ~ 2022. 12. 31</div>
+                                                <div class="img-label">서울</div>
+                                            </div>
+                                            <div class="img">
+                                                <img src="./img/promotion_12.jpg" alt="첫번째사진" />
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- main-promotion -->
+                <section class="main-event package">
+                    <div class="main-inner">
+                        <div class="main-title">
+                            <div class="main-h1"><h1>PACKAGE</h1></div>
+                            <div class="main-text">
+                                <p>
+                                    The-K호텔앤리조트를 보다 <br />
+                                    현명하게 이용하는 방법! 원하는 <br />
+                                    구성의 서비스를 최적의 가격으로 <br />
+                                    이용하실 수 있습니다.
+                                </p>
+                            </div>
+                            <!-- <div class="main-button">
+                                <button class="BACK"></button>
+                                <button class="NEXT"></button>
+                            </div> -->
+                        </div>
+                        <div class="img-list-box">
+                            <div class="list-box">
+                                <ul>
+                                    <li class="item">
+                                        <a href="#" class="list-inner">
+                                            <div class="img-text-list">
+                                                <div class="img-text">2022년 신년맞이 객실 초특가 Event</div>
+                                                <div class="img-data">2022. 01. 01 ~ 2022. 03. 31</div>
+                                                <div class="img-label">서울</div>
+                                            </div>
+                                            <div class="img">
+                                                <img src="./img/package_01.jpg" alt="첫번째사진" />
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="item">
+                                        <a href="#" class="list-inner">
+                                            <div class="img-text-list">
+                                                <div class="img-text">[한국교직원공제회]2022년 신년맞이 객실초특가 Event</div>
+                                                <div class="img-data">2022. 01. 01 ~ 2022. 03. 31</div>
+                                                <div class="img-label">서울</div>
+                                            </div>
+                                            <div class="img">
+                                                <img src="./img/package_02.jpg" alt="첫번째사진" />
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="item">
+                                        <a href="#" class="list-inner">
+                                            <div class="img-text-list">
+                                                <div class="img-text">Winter Package</div>
+                                                <div class="img-data">2021. 11. 01 ~ 2022. 02. 28</div>
+                                                <div class="img-label">서울</div>
+                                            </div>
+                                            <div class="img">
+                                                <img src="./img/package_03.jpg" alt="첫번째사진" />
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="item">
+                                        <a href="#" class="list-inner">
+                                            <div class="img-text-list">
+                                                <div class="img-text">Work Stay Promotion</div>
+                                                <div class="img-data">2021. 04. 01 ~ 2022. 03. 31</div>
+                                                <div class="img-label">서울</div>
+                                            </div>
+                                            <div class="img">
+                                                <img src="./img/package_04.jpg" alt="첫번째사진" />
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="item">
+                                        <a href="#" class="list-inner">
+                                            <div class="img-text-list">
+                                                <div class="img-text">스노우파크 패키지</div>
+                                                <div class="img-data">2021. 12. 01 ~ 2022. 02. 28</div>
+                                                <div class="img-label">경주</div>
+                                            </div>
+                                            <div class="img">
+                                                <img src="./img/package_05.jpg" alt="첫번째사진" />
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="item">
+                                        <a href="#" class="list-inner">
+                                            <div class="img-text-list">
+                                                <div class="img-text">2022년 주중 객실 패키지 특가 Event</div>
+                                                <div class="img-data">2022. 01. 01 ~ 2022. 12. 31</div>
+                                                <div class="img-label">설악산</div>
+                                            </div>
+                                            <div class="img">
+                                                <img src="./img/package_06.jpg" alt="첫번째사진" />
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="item">
+                                        <a href="#" class="list-inner">
+                                            <div class="img-text-list">
+                                                <div class="img-text">2022년 주말 객실 패키지 특가 Event</div>
+                                                <div class="img-data">2022. 01. 01 ~ 2022. 12. 31</div>
+                                                <div class="img-label">설악산</div>
+                                            </div>
+                                            <div class="img">
+                                                <img src="./img/package_07.jpg" alt="첫번째사진" />
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="item">
+                                        <a href="#" class="list-inner">
+                                            <div class="img-text-list">
+                                                <div class="img-text">2022년 휴 스테이 힐링 이벤트</div>
+                                                <div class="img-data">2022. 01. 01 ~ 2022. 12. 31</div>
+                                                <div class="img-label">설악산</div>
+                                            </div>
+                                            <div class="img">
+                                                <img src="./img/package_08.jpg" alt="첫번째사진" />
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="item">
+                                        <a href="#" class="list-inner">
+                                            <div class="img-text-list">
+                                                <div class="img-text">겨울 사랑 패키지</div>
+                                                <div class="img-data">2021. 12. 01 ~ 2022. 02. 28</div>
+                                                <div class="img-label">경주</div>
+                                            </div>
+                                            <div class="img">
+                                                <img src="./img/package_09.jpg" alt="첫번째사진" />
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="item">
+                                        <a href="#" class="list-inner">
+                                            <div class="img-text-list">
+                                                <div class="img-text">2022년 신년맞이 객실 초특가 Event</div>
+                                                <div class="img-data">2022. 01. 01 ~ 2022. 03. 31</div>
+                                                <div class="img-label">서울</div>
+                                            </div>
+                                            <div class="img">
+                                                <img src="./img/package_01.jpg" alt="첫번째사진" />
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                        </div>
+                    </div>
+                </section>
+                <section class="main-todo">
+                    <div class="main-inner">
+                        <div class="todo-title">#TO DO</div>
+                        <div class="main-todo-box">
+                            <div class="main-todo-list">
+                                <ul>
+                                    <li><span>서울</span></li>
+                                    
+                                </ul>
+                            </div>
+                        </div>
+                        <div></div>
+                    </div>
+                </section>
             </div>
-            <section class="back-img">
-                <div class="back-img-list">
-                    <h1 class="img-h1">The-K 호텔 서울</h1>
-                    <p class="img-text">최상의 서비스와 자연, 예술, 문화, 컨벤션이 함께 어우러진 고품격 커뮤니티 호텔</p>
-                    <a href="#" class="img-a">바로가기</a>
-                </div>
-                <ul class="button-list">
-                    <li><button></button></li>
-                    <li><button></button></li>
-                    <li><button></button></li>
-                    <li><button></button></li>
-                </ul>
-            </section>
-            <section class="main-event promotion">
-                <div class="main-inner">
-                    <div class="main-title">
-                        <div class="main-h1"><h1>PROMOTION</h1></div>
-                        <div class="main-text">
-                            <p>
-                                The-K호텔앤리조트가 준비한 <br />
-                                다양한 프로모션과 이벤트들을 <br />
-                                만나보세요
-                            </p>
-                        </div>
-                        <div class="main-button">
-                            <button class="BACK"></button>
-                            <button class="NEXT"></button>
-                        </div>
-                    </div>
-                    <div class="img-list-box">
-                        <div class="list-box">
-                            <ul class="slider">
-                                <li class="item">
-                                    <a href="#" class="list-inner">
-                                        <div class="img-text-list">
-                                            <div class="img-text">우첼로 겨울 특선 메뉴 출시</div>
-                                            <div class="img-data">2021. 11. 01 ~ 2022. 02. 28</div>
-                                            <div class="img-label">서울</div>
-                                        </div>
-                                        <div class="img">
-                                            <img src="./img/promotion_01.jpg" alt="첫번째사진" />
-                                        </div>
-                                    </a>
-                                </li>
-                                <li class="item">
-                                    <a href="#" class="list-inner">
-                                        <div class="img-text-list">
-                                            <div class="img-text">[한국교직원공제회원] 스몰웨딩 복지서비스 이벤트</div>
-                                            <div class="img-data">2021. 10. 07 ~ 2022. 12. 31</div>
-                                            <div class="img-label">서울</div>
-                                        </div>
-                                        <div class="img">
-                                            <img src="./img/promotion_02.jpg" alt="첫번째사진" />
-                                        </div>
-                                    </a>
-                                </li>
-                                <li class="item">
-                                    <a href="#" class="list-inner">
-                                        <div class="img-text-list">
-                                            <div class="img-text">休스테이 힐링 요금제</div>
-                                            <div class="img-data">2020. 06. 01 ~ 2022. 12. 31</div>
-                                            <div class="img-label">경주</div>
-                                        </div>
-                                        <div class="img">
-                                            <img src="./img/promotion_03.jpg" alt="첫번째사진" />
-                                        </div>
-                                    </a>
-                                </li>
-                                <li class="item">
-                                    <a href="#" class="list-inner">
-                                        <div class="img-text-list">
-                                            <div class="img-text">VIP Membership Club 회원모집</div>
-                                            <div class="img-data">2020. 06. 01 ~ 2022. 12. 31</div>
-                                            <div class="img-label">경주</div>
-                                        </div>
-                                        <div class="img">
-                                            <img src="./img/promotion_04.jpg" alt="첫번째사진" />
-                                        </div>
-                                    </a>
-                                </li>
-                                <li class="item">
-                                    <a href="#" class="list-inner">
-                                        <div class="img-text-list">
-                                            <div class="img-text">설맞이 선물세트</div>
-                                            <div class="img-data">2022. 01. 10 ~ 2022. 02. 06</div>
-                                            <div class="img-label">경주</div>
-                                        </div>
-                                        <div class="img">
-                                            <img src="./img/promotion_05.jpg" alt="첫번째사진" />
-                                        </div>
-                                    </a>
-                                </li>
-                                <li class="item">
-                                    <a href="#" class="list-inner">
-                                        <div class="img-text-list">
-                                            <div class="img-text">2022년 설날 선물 세트</div>
-                                            <div class="img-data">2022. 01. 03 ~ 2022. 01. 20</div>
-                                            <div class="img-label">서울</div>
-                                        </div>
-                                        <div class="img">
-                                            <img src="./img/promotion_06.jpg" alt="첫번째사진" />
-                                        </div>
-                                    </a>
-                                </li>
-                                <li class="item">
-                                    <a href="#" class="list-inner">
-                                        <div class="img-text-list">
-                                            <div class="img-text">더파크 송년 이벤트 명함 추첨 당첨자 발표</div>
-                                            <div class="img-data">2022. 01. 05 ~ 2022. 01. 29</div>
-                                            <div class="img-label">서울</div>
-                                        </div>
-                                        <div class="img">
-                                            <img src="./img/promotion_07.jpg" alt="첫번째사진" />
-                                        </div>
-                                    </a>
-                                </li>
-                                <li class="item">
-                                    <a href="#" class="list-inner">
-                                        <div class="img-text-list">
-                                            <div class="img-text">한식당 겨울특선메뉴</div>
-                                            <div class="img-data">2021. 12. 10 ~ 2022. 02. 28</div>
-                                            <div class="img-label">경주</div>
-                                        </div>
-                                        <div class="img">
-                                            <img src="./img/promotion_08.jpg" alt="첫번째사진" />
-                                        </div>
-                                    </a>
-                                </li>
-                                <li class="item">
-                                    <a href="#" class="list-inner">
-                                        <div class="img-text-list">
-                                            <div class="img-text">야외 웨딩 프로모션</div>
-                                            <div class="img-data">2021. 11. 18 ~ 2022. 02. 28</div>
-                                            <div class="img-label">서울</div>
-                                        </div>
-                                        <div class="img">
-                                            <img src="./img/promotion_09.jpg" alt="첫번째사진" />
-                                        </div>
-                                    </a>
-                                </li>
-                                <li class="item">
-                                    <a href="#" class="list-inner">
-                                        <div class="img-text-list">
-                                            <div class="img-text">더케이설악산가족호텔 트레킹 코스</div>
-                                            <div class="img-data">2021. 07. 02 ~ 2025. 01. 01</div>
-                                            <div class="img-label">설악산</div>
-                                        </div>
-                                        <div class="img">
-                                            <img src="./img/promotion_10.jpg" alt="첫번째사진" />
-                                        </div>
-                                    </a>
-                                </li>
-                                <li class="item">
-                                    <a href="#" class="list-inner">
-                                        <div class="img-text-list">
-                                            <div class="img-text">감포 자연산 돌미역 판매</div>
-                                            <div class="img-data">2021. 06. 05 ~ 2022. 12. 31</div>
-                                            <div class="img-label">경주</div>
-                                        </div>
-                                        <div class="img">
-                                            <img src="./img/promotion_11.jpg" alt="첫번째사진" />
-                                        </div>
-                                    </a>
-                                </li>
-                                <li class="item">
-                                    <a href="#" class="list-inner">
-                                        <div class="img-text-list">
-                                            <div class="img-text">한국교직원공제회원 전용 Fit Lounge 운영</div>
-                                            <div class="img-data">2022. 01. 01 ~ 2022. 12. 31</div>
-                                            <div class="img-label">서울</div>
-                                        </div>
-                                        <div class="img">
-                                            <img src="./img/promotion_12.jpg" alt="첫번째사진" />
-                                        </div>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <!-- main-promotion -->
-            <section class="main-event package">
-                <div class="main-inner">
-                    <div class="main-title">
-                        <div class="main-h1"><h1>PACKAGE</h1></div>
-                        <div class="main-text">
-                            <p>
-                                The-K호텔앤리조트를 보다 <br />
-                                현명하게 이용하는 방법! 원하는 <br />
-                                구성의 서비스를 최적의 가격으로 <br />
-                                이용하실 수 있습니다.
-                            </p>
-                        </div>
-                        <!-- <div class="main-button">
-                            <button class="BACK"></button>
-                            <button class="NEXT"></button>
-                        </div> -->
-                    </div>
-                    <div class="img-list-box">
-                        <div class="list-box">
-                            <ul>
-                                <li class="item">
-                                    <a href="#" class="list-inner">
-                                        <div class="img-text-list">
-                                            <div class="img-text">2022년 신년맞이 객실 초특가 Event</div>
-                                            <div class="img-data">2022. 01. 01 ~ 2022. 03. 31</div>
-                                            <div class="img-label">서울</div>
-                                        </div>
-                                        <div class="img">
-                                            <img src="./img/package_01.jpg" alt="첫번째사진" />
-                                        </div>
-                                    </a>
-                                </li>
-                                <li class="item">
-                                    <a href="#" class="list-inner">
-                                        <div class="img-text-list">
-                                            <div class="img-text">[한국교직원공제회]2022년 신년맞이 객실초특가 Event</div>
-                                            <div class="img-data">2022. 01. 01 ~ 2022. 03. 31</div>
-                                            <div class="img-label">서울</div>
-                                        </div>
-                                        <div class="img">
-                                            <img src="./img/package_02.jpg" alt="첫번째사진" />
-                                        </div>
-                                    </a>
-                                </li>
-                                <li class="item">
-                                    <a href="#" class="list-inner">
-                                        <div class="img-text-list">
-                                            <div class="img-text">Winter Package</div>
-                                            <div class="img-data">2021. 11. 01 ~ 2022. 02. 28</div>
-                                            <div class="img-label">서울</div>
-                                        </div>
-                                        <div class="img">
-                                            <img src="./img/package_03.jpg" alt="첫번째사진" />
-                                        </div>
-                                    </a>
-                                </li>
-                                <li class="item">
-                                    <a href="#" class="list-inner">
-                                        <div class="img-text-list">
-                                            <div class="img-text">Work Stay Promotion</div>
-                                            <div class="img-data">2021. 04. 01 ~ 2022. 03. 31</div>
-                                            <div class="img-label">서울</div>
-                                        </div>
-                                        <div class="img">
-                                            <img src="./img/package_04.jpg" alt="첫번째사진" />
-                                        </div>
-                                    </a>
-                                </li>
-                                <li class="item">
-                                    <a href="#" class="list-inner">
-                                        <div class="img-text-list">
-                                            <div class="img-text">스노우파크 패키지</div>
-                                            <div class="img-data">2021. 12. 01 ~ 2022. 02. 28</div>
-                                            <div class="img-label">경주</div>
-                                        </div>
-                                        <div class="img">
-                                            <img src="./img/package_05.jpg" alt="첫번째사진" />
-                                        </div>
-                                    </a>
-                                </li>
-                                <li class="item">
-                                    <a href="#" class="list-inner">
-                                        <div class="img-text-list">
-                                            <div class="img-text">2022년 주중 객실 패키지 특가 Event</div>
-                                            <div class="img-data">2022. 01. 01 ~ 2022. 12. 31</div>
-                                            <div class="img-label">설악산</div>
-                                        </div>
-                                        <div class="img">
-                                            <img src="./img/package_06.jpg" alt="첫번째사진" />
-                                        </div>
-                                    </a>
-                                </li>
-                                <li class="item">
-                                    <a href="#" class="list-inner">
-                                        <div class="img-text-list">
-                                            <div class="img-text">2022년 주말 객실 패키지 특가 Event</div>
-                                            <div class="img-data">2022. 01. 01 ~ 2022. 12. 31</div>
-                                            <div class="img-label">설악산</div>
-                                        </div>
-                                        <div class="img">
-                                            <img src="./img/package_07.jpg" alt="첫번째사진" />
-                                        </div>
-                                    </a>
-                                </li>
-                                <li class="item">
-                                    <a href="#" class="list-inner">
-                                        <div class="img-text-list">
-                                            <div class="img-text">2022년 휴 스테이 힐링 이벤트</div>
-                                            <div class="img-data">2022. 01. 01 ~ 2022. 12. 31</div>
-                                            <div class="img-label">설악산</div>
-                                        </div>
-                                        <div class="img">
-                                            <img src="./img/package_08.jpg" alt="첫번째사진" />
-                                        </div>
-                                    </a>
-                                </li>
-                                <li class="item">
-                                    <a href="#" class="list-inner">
-                                        <div class="img-text-list">
-                                            <div class="img-text">겨울 사랑 패키지</div>
-                                            <div class="img-data">2021. 12. 01 ~ 2022. 02. 28</div>
-                                            <div class="img-label">경주</div>
-                                        </div>
-                                        <div class="img">
-                                            <img src="./img/package_09.jpg" alt="첫번째사진" />
-                                        </div>
-                                    </a>
-                                </li>
-                                <li class="item">
-                                    <a href="#" class="list-inner">
-                                        <div class="img-text-list">
-                                            <div class="img-text">2022년 신년맞이 객실 초특가 Event</div>
-                                            <div class="img-data">2022. 01. 01 ~ 2022. 03. 31</div>
-                                            <div class="img-label">서울</div>
-                                        </div>
-                                        <div class="img">
-                                            <img src="./img/package_01.jpg" alt="첫번째사진" />
-                                        </div>
-                                    </a>
-                                </li>
-                            </ul>
-                    </div>
-                </div>
-            </section>
-            <section class="main-todo">
-                <div class="main-inner">
-                    <div class="todo-title">#TO DO</div>
-                    <div class="main-todo-box">
-                        <div class="main-todo-list">
-                            <ul>
-                                <li><span>서울</span></li>
-                                
-                            </ul>
-                        </div>
-                    </div>
-                    <div></div>
-                </div>
-            </section>
         </div>
+        <script src="https://code.jquery.com/jquery-1.12.4.min.js "></script>
         <script src="./main.js"></script>
     </body>
 </html>

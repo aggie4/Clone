@@ -14,25 +14,141 @@
     overflow-y: auto;
     -webkit-overflow-scrolling: touch;
 }
-
-.inner {
-    width: 92%;
-    height: 100px;
-    min-width: 1750px;
-    margin: 0 auto;
-    margin-top: 50px;
+/* header */
+#header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 1);
+    box-sizing: border-box;
 }
-.inner .logo {
-    width: 240px;
-    float: left;
-}
-.list ul {
-    display: flex;
-    justify-content: end;
-}
-.list > ul > li {
-    padding-left: 10px;
+#header-branch {
+    width: 100%;
+    display: none;
     text-align: center;
+    background-color: #f0ebe8;
+    overflow: hidden;
+    position: relative;
+}
+#header-branch > .header-inner {
+    width: 92%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 30px 0;
+}
+#header-branch .header-title {
+    display: none;
+}
+#header-branch .close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 2;
+}
+#header-branch .header-list {
+    font-size: 0;
+    text-align: center;
+    margin: -7px;
+}
+#header-branch .header-list li {
+    float: left;
+    width: 25%;
+    position: relative;
+    box-sizing: border-box;
+    padding: 7px;
+    text-align: center;
+}
+#header-branch .header-list li .hotal-img {
+    position: absolute;
+    z-index: 0;
+}
+#header-branch .header-list li .hotal-img img {
+    width: 100%;
+    max-width: 100%;
+}
+#header-branch .header-list li .cover {
+    position: absolute;
+    left: 7px;
+    right: 7px;
+    top: 7px;
+    bottom: 7px;
+    width: auto;
+    height: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* transition: all 0.5s ease; */
+}
+#header-branch .header-list li .cover .text-list {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 14px;
+}
+#header-branch .header-list li .cover .text-list span {
+    display: block;
+    color: #fff;
+}
+#header-branch .header-list li .cover .text-list .text {
+    font-size: 18px;
+}
+#header-branch .header-list li .cover .more {
+    height: 0;
+    margin-top: 0;
+    opacity: 0;
+    /* transition: all 0.5s ease; */
+}
+#header-branch .header-list li .cover .more img {
+    display: inline-block;
+}
+#header-branch .header-list li .cover::after {
+    display: inline-block;
+    vertical-align: middle;
+    content: '';
+    width: 0;
+    height: 100%;
+}
+/* inner */
+#header > .inner {
+    width: 92%;
+    height: 123px;
+    max-width: 1750px;
+    margin: 0 auto;
+    display: table;
+    position: relative;
+    transition: all 0.3s ease;
+}
+#header > .inner > * {
+    display: table-cell;
+    vertical-align: middle;
+    /* 
+        모아주는 성질을 갖고 있다.
+        flex비슷
+    */
+}
+#header > .logo {
+    width: 240px;
+    /* float: left; */
+}
+#header .logo a {
+    display: block;
+    line-height: 0;
+    transform-origin: left;
+    padding-top: 3%;
+}
+#header .logo img {
+    width: 240px;
+}
+#header .list > ul {
+    display: table;
+    margin-left: auto;
+}
+#header .list > ul > li {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+#header .list > ul > li + li {
+    padding-left: 10px;
 }
 .list li a {
     display: block;
@@ -87,8 +203,6 @@
     max-width: 1920px;
     height: 765px;
     background-image: url(./img/visual_01B.jpg);
-    background-size: contain;
-    background-repeat: no-repeat;
     margin-bottom: 50px;
 }
 .back-img .back-img-list .img-h1 {
@@ -108,7 +222,7 @@
     padding-left: 150px;
     margin-bottom: 30px;
 }
-.back-img .back-img-list .img-a {
+.back-img .back-img-list .img-a a {
     font-size: 16px;
     color: #fff;
     width: 170px;
