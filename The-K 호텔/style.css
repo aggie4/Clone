@@ -4,6 +4,8 @@
     호텔찾기처럼 가운데가 아닌 애매한 부분은
     span태그로 묶어서 패딩으로 조진다
 */
+@charset "utf-8";
+
 #wrap {
     position: fixed;
     width: 100%;
@@ -12,6 +14,7 @@
     overflow-y: auto;
     -webkit-overflow-scrolling: touch;
 }
+
 .inner {
     width: 92%;
     height: 100px;
@@ -60,7 +63,6 @@
     display: inline-block;
     font-size: 16px;
     color: #fff;
-    font-weight: 600;
     padding-right: 46px;
 }
 .list > ul > li span::after {
@@ -87,6 +89,7 @@
     background-image: url(./img/visual_01B.jpg);
     background-size: contain;
     background-repeat: no-repeat;
+    margin-bottom: 50px;
 }
 .back-img .back-img-list .img-h1 {
     font-size: 50px;
@@ -135,7 +138,7 @@
     background-color: #333;
 }
 /* back-img */
-.main-promotion {
+.main-event {
     background-color: #fbfbfb;
 }
 .main-inner {
@@ -174,13 +177,64 @@
     line-height: 32px;
     color: #b6ab97;
 }
-.main-inner > .main-button {
+.main-title > .main-button > .BACK {
+    position: absolute;
+    left: 280px;
+    bottom: 95px;
+    width: 60px;
+    height: 60px;
+    padding: 0;
+    box-sizing: border-box;
+    border: 1px solid #b6b6b6;
+    background-color: transparent;
+    border-radius: 100%;
+}
+.main-title > .main-button > .BACK::after {
+    content: '';
+    display: inline-block;
+    border-left: 2px solid #b6b6b6;
+    transform: rotate(45deg);
+    margin-left: 2px;
+    width: 10px;
+    height: 10px;
+    border-bottom: 2px solid #b6b6b6;
+    box-sizing: border-box;
+}
+.main-title > .main-button > .NEXT {
+    position: absolute;
+    left: 350px;
+    bottom: 95px;
+    width: 60px;
+    height: 60px;
+    padding: 0;
+    box-sizing: border-box;
+    border: 1px solid #b6b6b6;
+    background-color: transparent;
+    border-radius: 100%;
+}
+.main-title > .main-button > .NEXT::after {
+    content: '';
+    display: inline-block;
+    border-right: 2px solid #b6b6b6;
+    transform: rotate(-45deg);
+    width: 10px;
+    height: 10px;
+    border-bottom: 2px solid #b6b6b6;
+    box-sizing: border-box;
+}
+.main-title > .main-button > .BACK:hover {
+    border-color: #333;
+}
+.main-title > .main-button > .NEXT:hover {
+    border-color: #333;
 }
 .img-list-box {
     width: 100%;
     display: inline-block;
     padding: 15px;
     box-sizing: border-box;
+    margin: -30px;
+    position: static;
 }
 .img.list-box .main-button {
     left: 300px;
@@ -233,4 +287,20 @@
     background-color: #dedede;
     overflow: hidden;
     position: relative;
+}
+/* main-promotion */
+.package {
+    background-color: #fff;
+}
+.package > .main-inner {
+    padding-left: 0;
+    padding-right: 490px;
+}
+.package > .main-inner > .main-title {
+    left: auto;
+    right: 0;
+}
+.main-event > .lmg-list-box {
+    margin: -30px;
+    position: static;
 }
