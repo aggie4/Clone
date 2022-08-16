@@ -12,9 +12,28 @@
 console.log('버튼 클릭이 되나여?', a);
 let b = $('.active');
 console.log('이건 되나여?', b); */
+
 $('.inner .list-Search').click(function () {
-    $('.active').css({
+    /* $('#header').css({
+        height: 383.344,
+    }); */
+    $('.active').stop().slideDown(600).css({
         display: 'block',
-        height: 260,
+        /* height: 260, */
+    });
+});
+$('.close').click(function () {
+    $('.active').slideUp(600);
+});
+
+$('.button-list li').click(function () {
+    let i = $(this).index();
+    $('.button-list li').removeClass('on');
+    $(this).addClass('on');
+    $('.img-box > div').css({
+        opacity: 0,
+    });
+    $('.img-box .img').eq(i).css({
+        opacity: 1,
     });
 });
